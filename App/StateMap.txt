@@ -1,0 +1,15 @@
+
+
+home 						'/' 
+
+
+marktplatz 					'/marktplatz'
+marktplatz.detail				'/detail/:{id}'
+marktplatz.detail.message			'/message'
+
+
+portfolio					'/portfolio'
+portfolio.edit					'/edit/:{id}'
+portfolio.create				'/create'
+portfolio.explore				'/explore'
+portfolio.search				'/search'
