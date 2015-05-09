@@ -21,3 +21,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.centered-button {
+    display: block;
+    width: 75%;
+    margin: 0px auto;
+}

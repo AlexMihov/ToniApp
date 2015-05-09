@@ -7674,3 +7674,8 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.centered-button {
+  display: block;
+  width: 75%;
+  margin: 0px auto; }
