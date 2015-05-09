@@ -7,6 +7,7 @@ angular.module('ToniApp.controllers', [])
 .controller('MarketDetailCtrl', function($scope, $stateParams, MarketEntries) {
 	var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
+    console.log('controller log', $scope.marketEntry);
     $scope.remove = function(chat) {
         Chats.remove(chat);
     }

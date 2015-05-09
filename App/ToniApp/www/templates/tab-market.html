@@ -1,7 +1,7 @@
 <ion-view view-title="Marktplatz">
     <ion-content>
         <ion-list>
-            <ion-item class="item-remove-animate item item-icon-right item-text-wrap " ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
+            <ion-item class="item-remove-animate item item-icon-right item-text-wrap " ng-repeat="marketEntry in marketEntries.data" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
                 <h2>{{marketEntry.title}}</h2>
                 <p>{{marketEntry.content}}</p>
                 <i class="icon ion-chevron-right icon-accessory"></i>

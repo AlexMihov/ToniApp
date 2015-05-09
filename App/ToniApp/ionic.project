@@ -1,4 +1,12 @@
 {
   "name": "ToniApp",
-  "app_id": "b3e85e65"
+  "app_id": "b3e85e65",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
