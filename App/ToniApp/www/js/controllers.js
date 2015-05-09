@@ -4,9 +4,13 @@ angular.module('ToniApp.controllers', [])
     $scope.marketEntries = MarketEntries.getAll();
 })
 
-.controller('MarketDetailCtrl', function($scope, $stateParams, MarketEntries) {
+.controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries) {
 	var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
+
+    $scope.gotoMessage = function () {
+    	$location.path('/tab/market/'+currentID+'/message');
+    }
     $scope.remove = function(chat) {
         Chats.remove(chat);
     }

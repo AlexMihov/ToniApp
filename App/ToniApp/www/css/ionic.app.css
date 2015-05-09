@@ -7679,3 +7679,6 @@ a.button {
   display: block;
   width: 75%;
   margin: 0px auto; }
+
+textarea {
+  rows: 50; }
