@@ -6,18 +6,14 @@
     </ion-nav-buttons>
     <div class="tabs-striped tabs-top">
         <div class="tabs">
-            <a class="tab-item active" href="#">
-                Alle Projekte
-            </a>
-            <a class="tab-item" href="#">
-              Filter
-            </a>
+            <a class="tab-item active" href="#">Alle Projekte</a>
+            <a class="tab-item" href="#">Filter</a>
         </div>
     </div>
     <ion-content>
         <br>
         <br>
-        <ion-list>
+        <ion-list id="market_all">
             <ion-item class="item-remove-animate item item-icon-right item-text-wrap " ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
                 <h2>{{marketEntry.title}}</h2>
                 <p>{{marketEntry.content}}</p>
@@ -26,6 +22,16 @@
                     Delete
                 </ion-option-button>
             </ion-item>
+        </ion-list>
+        <ion-list>
+            <div ng-repeat="filter in filters">
+                <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: isFilterShown(filter)}">
+                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-minus' : 'ion-plus'"></i> 
+                </ion-item>
+                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="isFilterShown(filter)">
+                    {{item.name}}
+                </ion-item>
+            </div>
         </ion-list>
     </ion-content>
 </ion-view>

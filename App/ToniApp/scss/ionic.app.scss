@@ -17,16 +17,30 @@ $dark:                            #444 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
 .centered-button {
     display: block;
     width: 75%;
     margin: 0px auto;
 }
 
-textarea{
-	rows: 50;
+textarea {
+    rows: 50;
+}
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+    display: block !important;
 }
