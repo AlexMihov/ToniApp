@@ -1,5 +1,22 @@
 <ion-view view-title="Marktplatz">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear button-positive" ng-click="doSomething()">
+            <i class="icon ion-ios-plus-empty"></i>
+        </button>
+    </ion-nav-buttons>
+    <div class="tabs-striped tabs-top">
+        <div class="tabs">
+            <a class="tab-item active" href="#">
+                Alle Projekte
+            </a>
+            <a class="tab-item" href="#">
+              Filter
+            </a>
+        </div>
+    </div>
     <ion-content>
+        <br>
+        <br>
         <ion-list>
             <ion-item class="item-remove-animate item item-icon-right item-text-wrap " ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
                 <h2>{{marketEntry.title}}</h2>

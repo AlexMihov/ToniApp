@@ -5,11 +5,11 @@ angular.module('ToniApp.controllers', [])
 })
 
 .controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries) {
-	var currentID = $stateParams.marketEntryID;
+    var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
 
-    $scope.gotoMessage = function () {
-    	$location.path('/tab/market/'+currentID+'/message');
+    $scope.gotoMessage = function() {
+        $location.path('/tab/market/' + currentID + '/message');
     }
     $scope.remove = function(chat) {
         Chats.remove(chat);
@@ -32,4 +32,8 @@ angular.module('ToniApp.controllers', [])
     $scope.settings = {
         enableFriends: true
     };
+})
+
+.controller('PortfolioCtrl', function($scope) {
+    $scope.portfolios = "Not yet implemented"
 });

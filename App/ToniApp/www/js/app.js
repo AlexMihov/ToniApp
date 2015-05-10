@@ -95,6 +95,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
                 controller: 'AccountCtrl'
             }
         }
+    })
+    .state('tab.portfolios', {
+        url: '/portfolios',
+        views: {
+            'tab-portfolios': {
+                templateUrl: 'templates/tab-portfolios.html',
+                controller: 'PortfolioCtrl'
+            }
+        }
     });
 
     // if none of the above states are matched, use this as the fallback
