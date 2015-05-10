@@ -5,7 +5,7 @@ angular.module('ToniApp.services')
         // Some fake testing data
         var filters = [{
             id: 0,
-            name: 'Filter 1',
+            name: 'Darstellende Künste und Film',
             items: [{
                 name: 'first Filter'
             }, {
@@ -13,19 +13,31 @@ angular.module('ToniApp.services')
             }]
         }, {
             id: 1,
-            name: 'Filter 2',
+            name: 'Design',
             items: [{
-                name: 'first Filter'
-            }]
+                name: 'Cast / Audiovisuelle Medien'
+            },{
+                name: 'Game Design'
+            },{
+                name: 'Industrial Design'
+            },{
+                name: 'Interaction Design'
+            },{
+                name: 'Scientific Visualisation'
+            },{
+                name: 'Style & Design'
+            },{
+                name: 'Visuelle Kommunikation'
+            },]
         }, {
             id: 2,
-            name: 'Filter 3',
+            name: 'Kulturanalysen und Vermittlung',
             items: [{
                 name: 'first Filter'
             }]
         }, {
             id: 3,
-            name: 'Filter 4',
+            name: 'Kunst & Medien',
             items: [{
                 name: 'first Filter'
             }]

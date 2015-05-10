@@ -4,10 +4,10 @@
             <i class="icon ion-ios-plus-empty"></i>
         </button>
     </ion-nav-buttons>
-    <div class="tabs-striped tabs-top">
+    <div class="tabs-striped tabs-top tabs-color-positive">
         <div class="tabs">
-            <a class="tab-item active" ng-click="displayFilter(false)">Alle Projekte</a>
-            <a class="tab-item" ng-click="displayFilter(true)">Filter</a>
+            <a class="tab-item" ng-class="showFilters ? '':'active'" ng-click="displayFilter(false)">Alle Projekte</a>
+            <a class="tab-item" ng-class="showFilters ? 'active':''" ng-click="displayFilter(true)">Filter</a>
         </div>
     </div>
     <ion-content>
@@ -24,6 +24,9 @@
             </ion-item>
         </ion-list>
         <ion-list ng-show="showFilters">
+        <h5 class="padding">
+          Projekte anzeigen von:
+        </h5>
             <div ng-repeat="filter in filters">
                 <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: isFilterShown(filter)}">
                     {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-minus' : 'ion-plus'"></i> 
