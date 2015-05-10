@@ -12,7 +12,7 @@ angular.module('ToniApp.services')
             creator: 'Moris Freiburghaus'
         }, {
             id: 1,
-            title: 'Tänzer für Tanzshow YIPYAP',
+            title: 'Tänzer für Tanzshow BLUBLA',
             content: 'Hast du Freude an Popmusik und du tanzt gerne? Für unsere Performance brauchen wir noch zwei männliche Tänzer...',
             content_long: 'Hast du Freude an Popmusik und du tanzt gerne? Für unsere Performance brauchen wir noch zwei männliche Tänzer, welche sehr gut breakdancen können. Sie werden im Hitergrund der Vorstellung für den zusätzliche WOW-Effekt sorgen und einige sehr komplizierte Moves ausführen müssen.',
             timespan: 'Jedes Wochenende im Juni, 2015',
