@@ -3,6 +3,15 @@ angular.module('ToniApp.controllers', [])
 .controller('MarketCtrl', function($scope, MarketEntries, Filters) {
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
+    $scope.showFilters = false;
+
+    $scope.displayFilter = function(show) {
+    	if(show){
+    		$scope.showFilters = true;
+    	} else if(!show){
+    		$scope.showFilters = false;
+    	}
+    }
 
     $scope.toggleFilter = function(filter) {
         if ($scope.isFilterShown(filter)) {
