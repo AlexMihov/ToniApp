@@ -4,18 +4,21 @@ angular.module('ToniApp.controllers', [])
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
     $scope.showFilters = false;
-    $scope.newEntry = {};
+    $scope.newEntry = {
+        from: new Date(),
+        to: new Date()
+    };
 
     $scope.displayFilter = function(show) {
-    	if(show){
-    		$scope.showFilters = true;
-    	} else if(!show){
-    		$scope.showFilters = false;
-    	}
+        if (show) {
+            $scope.showFilters = true;
+        } else if (!show) {
+            $scope.showFilters = false;
+        }
     }
 
     $scope.toggleFilter = function(filter) {
-    	filter.active = !filter.active;
+        filter.active = !filter.active;
 
     };
     $scope.isFilterShown = function(filter) {
@@ -23,7 +26,7 @@ angular.module('ToniApp.controllers', [])
     };
 
     $scope.gotoCreateNew = function() {
-    	$location.path('/tab/market/new');
+        $location.path('/tab/market/new');
     }
 })
 

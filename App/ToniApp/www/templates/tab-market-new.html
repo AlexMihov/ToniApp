@@ -11,11 +11,11 @@
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Von</span>
-                <input type="date" placeholder="Zeitraum">
+                <input ng-model="newEntry.from" type="date" placeholder="von">
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Bis</span>
-                <input type="date" placeholder="Zeitraum">
+                <input ng-model="newEntry.to" type="date" placeholder="bis">
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Themenfelder</span>
@@ -27,7 +27,7 @@
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">URL</span>
-                <input type="text" placeholder="URL">
+                <input ng-model="newEntry.url" type="url" placeholder="URL">
             </label>
         </div>
     </ion-content>
