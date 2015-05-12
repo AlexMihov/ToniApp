@@ -4,6 +4,7 @@ angular.module('ToniApp.controllers', [])
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
     $scope.showFilters = false;
+    $scope.newEntry = {};
 
     $scope.displayFilter = function(show) {
     	if(show){

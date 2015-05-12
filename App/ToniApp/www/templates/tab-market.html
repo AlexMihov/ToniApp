@@ -25,8 +25,8 @@
         </ion-list>
         <ion-list ng-show="showFilters">
             <h5 class="padding">
-          Projekte anzeigen von:
-        </h5>
+                Projekte anzeigen von:
+            </h5>
             <div ng-repeat="filter in filters">
                 <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
                     {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>

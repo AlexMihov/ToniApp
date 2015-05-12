@@ -1,24 +1,34 @@
-<ion-view view-title="Marktplatz">
+<ion-view view-title="Projekt erstellen">
     <ion-content>
-
-        <ion-list>
-            <h5 class="padding">
-          Projekte anzeigen von:
-        </h5>
-            <div ng-repeat="filter in filters">
-                <ion-item class="item-stable item-icon-right active" ng-click="toggleFilter(filter)" >
-                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
-                </ion-item>
-                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="filter.active">
-                    {{item.name}}
-                    <label class="toggle toggle-positive">
-                        <input type="checkbox">
-                        <div class="track">
-                            <div class="handle"></div>
-                        </div>
-                    </label>
-                </ion-item>
-            </div>
-        </ion-list>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Titel</span>
+                <input ng-model="newEntry.title" type="text" placeholder="Titel">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Info</span>
+                <input ng-model="newEntry.content_long" type="text" placeholder="Info">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Von</span>
+                <input type="date" placeholder="Zeitraum">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Bis</span>
+                <input type="date" placeholder="Zeitraum">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Themenfelder</span>
+                <input type="text" placeholder="Themenfelder">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Bilder</span>
+                <input type="text" placeholder="Bilder">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">URL</span>
+                <input type="text" placeholder="URL">
+            </label>
+        </div>
     </ion-content>
 </ion-view>
