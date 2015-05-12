@@ -24,15 +24,21 @@
             </ion-item>
         </ion-list>
         <ion-list ng-show="showFilters">
-        <h5 class="padding">
+            <h5 class="padding">
           Projekte anzeigen von:
         </h5>
             <div ng-repeat="filter in filters">
                 <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: isFilterShown(filter)}">
-                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-minus' : 'ion-plus'"></i> 
+                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-minus' : 'ion-plus'"></i>
                 </ion-item>
                 <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="isFilterShown(filter)">
                     {{item.name}}
+                    <label class="toggle toggle-positive" style="">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
                 </ion-item>
             </div>
         </ion-list>

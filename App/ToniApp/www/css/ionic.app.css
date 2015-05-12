@@ -7694,3 +7694,7 @@ textarea {
 
 .list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
   display: block !important; }
+
+.item-accordion .toggle {
+  float: right;
+  padding-top: 0px; }
