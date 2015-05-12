@@ -1,0 +1,24 @@
+<ion-view view-title="Marktplatz">
+    <ion-content>
+
+        <ion-list>
+            <h5 class="padding">
+          Projekte anzeigen von:
+        </h5>
+            <div ng-repeat="filter in filters">
+                <ion-item class="item-stable item-icon-right active" ng-click="toggleFilter(filter)" >
+                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+                </ion-item>
+                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="filter.active">
+                    {{item.name}}
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

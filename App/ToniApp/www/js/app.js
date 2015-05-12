@@ -36,6 +36,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
         templateUrl: "templates/tabs.html"
     })
 
+    .state('tab.market-new', {
+        url: '/market/new',
+        views: {
+            'tab-market': {
+                templateUrl: 'templates/tab-market-new.html',
+                controller: 'MarketCtrl'
+            }
+        }
+    })
     // Each tab has its own nav history stack:
     .state('tab.market-detail', {
         url: '/market/:marketEntryID',
@@ -56,6 +65,7 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             }
         }
     })
+
 
     .state('tab.market', {
         url: '/market',
@@ -88,23 +98,23 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
         })
 
     .state('tab.account', {
-        url: '/account',
-        views: {
-            'tab-account': {
-                templateUrl: 'templates/tab-account.html',
-                controller: 'AccountCtrl'
+            url: '/account',
+            views: {
+                'tab-account': {
+                    templateUrl: 'templates/tab-account.html',
+                    controller: 'AccountCtrl'
+                }
             }
-        }
-    })
-    .state('tab.portfolios', {
-        url: '/portfolios',
-        views: {
-            'tab-portfolios': {
-                templateUrl: 'templates/tab-portfolios.html',
-                controller: 'PortfolioCtrl'
+        })
+        .state('tab.portfolios', {
+            url: '/portfolios',
+            views: {
+                'tab-portfolios': {
+                    templateUrl: 'templates/tab-portfolios.html',
+                    controller: 'PortfolioCtrl'
+                }
             }
-        }
-    });
+        });
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/market');

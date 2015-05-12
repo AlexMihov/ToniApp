@@ -1,6 +1,6 @@
 angular.module('ToniApp.controllers', [])
 
-.controller('MarketCtrl', function($scope, MarketEntries, Filters) {
+.controller('MarketCtrl', function($scope, $location, MarketEntries, Filters) {
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
     $scope.showFilters = false;
@@ -14,15 +14,16 @@ angular.module('ToniApp.controllers', [])
     }
 
     $scope.toggleFilter = function(filter) {
-        if ($scope.isFilterShown(filter)) {
-            $scope.shownFilter = null;
-        } else {
-            $scope.shownFilter = filter;
-        }
+    	filter.active = !filter.active;
+
     };
     $scope.isFilterShown = function(filter) {
         return $scope.shownFilter === filter;
     };
+
+    $scope.gotoCreateNew = function() {
+    	$location.path('/tab/market/new');
+    }
 })
 
 .controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries) {

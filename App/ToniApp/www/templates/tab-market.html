@@ -1,6 +1,6 @@
 <ion-view view-title="Marktplatz">
     <ion-nav-buttons side="secondary">
-        <button class="button button-clear button-positive" ng-click="doSomething()">
+        <button class="button button-clear button-positive" ng-click="gotoCreateNew()">
             <i class="icon ion-ios-plus-empty"></i>
         </button>
     </ion-nav-buttons>
@@ -28,12 +28,12 @@
           Projekte anzeigen von:
         </h5>
             <div ng-repeat="filter in filters">
-                <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: isFilterShown(filter)}">
-                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="isFilterShown(filter) ? 'ion-minus' : 'ion-plus'"></i>
+                <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
+                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
                 </ion-item>
-                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="isFilterShown(filter)">
+                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="filter.active">
                     {{item.name}}
-                    <label class="toggle toggle-positive" style="">
+                    <label class="toggle toggle-positive">
                         <input type="checkbox">
                         <div class="track">
                             <div class="handle"></div>
