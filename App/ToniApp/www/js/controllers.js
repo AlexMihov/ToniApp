@@ -31,9 +31,9 @@ angular.module('ToniApp.controllers', [])
     }
     $scope.handleTopButton = function(){
     	if(!$scope.showFilters){
-    		gotoCreateNew();
+    		$scope.gotoCreateNew();
     	}else{
-    		window.location.reload();
+    		//window.location.reload();
     	}
     }
 })
