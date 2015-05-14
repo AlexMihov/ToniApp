@@ -8,8 +8,10 @@ angular.module('ToniApp.services')
             active: false,
             name: 'Darstellende Künste und Film',
             items: [{
+                active: false,
                 name: 'first Filter'
             }, {
+                active: false,
                 name: 'second Filter'
             }]
         }, {
@@ -17,25 +19,33 @@ angular.module('ToniApp.services')
             active: false,
             name: 'Design',
             items: [{
+                active: false,
                 name: 'Cast / Audiovisuelle Medien'
-            },{
+            }, {
+                active: false,
                 name: 'Game Design'
-            },{
+            }, {
+                active: false,
                 name: 'Industrial Design'
-            },{
+            }, {
+                active: false,
                 name: 'Interaction Design'
-            },{
+            }, {
+                active: false,
                 name: 'Scientific Visualisation'
-            },{
+            }, {
+                active: false,
                 name: 'Style & Design'
-            },{
+            }, {
+                active: false,
                 name: 'Visuelle Kommunikation'
-            },]
+            }, ]
         }, {
             id: 2,
             active: false,
             name: 'Kulturanalysen und Vermittlung',
             items: [{
+                active: false,
                 name: 'first Filter'
             }]
         }, {
@@ -43,6 +53,7 @@ angular.module('ToniApp.services')
             active: false,
             name: 'Kunst & Medien',
             items: [{
+                active: false,
                 name: 'first Filter'
             }]
         }, {
@@ -50,6 +61,7 @@ angular.module('ToniApp.services')
             active: false,
             name: 'Filter 5',
             items: [{
+                active: false,
                 name: 'first Filter'
             }]
         }];

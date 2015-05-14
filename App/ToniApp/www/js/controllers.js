@@ -1,6 +1,6 @@
 angular.module('ToniApp.controllers', [])
 
-.controller('MarketCtrl', function($scope, $location, MarketEntries, Filters) {
+.controller('MarketCtrl', function($scope, $location, $state, MarketEntries, Filters) {
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
     $scope.showFilters = false;
@@ -8,6 +8,7 @@ angular.module('ToniApp.controllers', [])
         from: new Date(),
         to: new Date()
     };
+    $scope.derp = true;
 
     $scope.displayFilter = function(show) {
         if (show) {
@@ -27,6 +28,13 @@ angular.module('ToniApp.controllers', [])
 
     $scope.gotoCreateNew = function() {
         $location.path('/tab/market/new');
+    }
+    $scope.handleTopButton = function(){
+    	if(!$scope.showFilters){
+    		gotoCreateNew();
+    	}else{
+    		window.location.reload();
+    	}
     }
 })
 

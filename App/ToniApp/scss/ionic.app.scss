@@ -19,9 +19,14 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-.centered-button {
+.centered-button-75 {
     display: block;
     width: 75%;
+    margin: 0px auto;
+}
+.centered-button-50 {
+    display: block;
+    width: 50%;
     margin: 0px auto;
 }
 

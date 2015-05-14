@@ -7,7 +7,7 @@ angular.module('ToniApp.services')
             id: 0,
             title: 'Schauspieler gesucht',
             content: 'Für meinen Kurzfilm "Der toxische Morgen" suche ich unbedingt noch einen Schauspieler für die Rolle eines Jägers...',
-            content_long: 'Für meinen Kurzfilm "Der toxische Morgen" suche ich unbedingt noch einen Schauspieler für die Rolle eines Jägers. Schaupielerfahrung wär erwünscht, Alter bevorzugt zwischen 30-40, männlich',
+            content_long: 'Für meinen Kurzfilm "Der toxische Morgen" suche ich unbedingt n""och einen Schauspieler für die Rolle eines Jägers. Schaupielerfahrung wär erwünscht, Alter bevorzugt zwischen 30-40, männlich',
             timespan: '3 Drehtage, voraussichtlich Mitte Mai',
             creator: 'Moris Freiburghaus'
         }, {
