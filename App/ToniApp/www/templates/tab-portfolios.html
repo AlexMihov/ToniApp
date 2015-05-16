@@ -1,6 +1,13 @@
 <ion-view view-title="Portfolios">
+    <div class="tabs-striped tabs-top tabs-color-positive">
+        <div class="tabs">
+            <a class="tab-item" ng-class="showFilters ? '':'active'" ng-click="displayFilter(false)">Portfolios</a>
+            <a class="tab-item" ng-class="" ng-click="displayFilter(false)">Personen</a>
+            <a class="tab-item" ng-class="showFilters ? 'active':''" ng-click="displayFilter(true)">Filter</a>
+        </div>
+    </div>
     <ion-content>
-        <label class="item item-input">
+        <label class="item item-input searchbar">
             <i class="icon ion-search placeholder-icon"></i>
             <input type="text" placeholder="Suche" ng-model="searchText">
         </label>

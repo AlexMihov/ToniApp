@@ -1,6 +1,6 @@
 <ion-view view-title="{{portfolio.name}}">
     <ion-content>
-        <div class="padding">
+        <div class="">
             <div class="list">
                 <a class="item item-thumbnail-left" href="#">
                     <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd">
@@ -9,16 +9,16 @@
                     <p>moris.freiburghaus@zhdk.ch</p>
                 </a>
                 <div class="row">
-                    <div class="col centered" ng-click="alert('Dieses Feature ist nicht implementiert"><i class="icon portfolio-social ion-social-facebook"></i></div>
-                    <div class="col centered" ng-click="alert('Dieses Feature ist nicht implementiert"><i class="icon portfolio-social ion-social-twitter"></i></div>
-                    <div class="col centered" ng-click="alert('Dieses Feature ist nicht implementiert"><i class="icon portfolio-social ion-social-vimeo"></i></div>
-                    <div class="col centered" ng-click="alert('Dieses Feature ist nicht implementiert"><i class="icon portfolio-social ion-social-youtube"></i></div>
-                    <div class="col centered" ng-click="alert('Dieses Feature ist nicht implementiert"><i class="icon portfolio-social ion-social-instagram"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-at"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-ios-telephone"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-facebook"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-twitter"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-vimeo"></i></div>
                 </div>
             </div>
-            <hr style="margin:0px 10px">
-            <div class="1px-divider" style="height:1px;"></div>
-            <h2 class="centered">Portfolio von Moris</h2>
+            <div></div>
+            <hr style="margin:-10px 20px;">
+            <h3 class="centered">Portfolio von Moris</h3>
             <div class="list">
                 <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:portfolio.name" href="#/tab/portfolios/{{portfolio.id}}">
                     <img ng-src="{{portfolio.picture}}">

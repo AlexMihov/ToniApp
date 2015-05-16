@@ -7713,6 +7713,10 @@ h2 {
   font-family: "areal_blmedium";
   font-size: 18px !important; }
 
+h3 {
+  font-family: "areal_blmedium";
+  font-size: 20px !important; }
+
 h4 {
   font-family: "areal_blmedium";
   font-size: 18px !important; }
@@ -7733,6 +7737,9 @@ p {
 
 .centered {
   text-align: center; }
+
+.searchbar {
+  margin-top: 47px !important; }
 
 .bar-footer {
   overflow: visible !important; }
