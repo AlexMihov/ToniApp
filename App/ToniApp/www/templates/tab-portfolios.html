@@ -11,6 +11,9 @@
                 <p>{{portfolio.project_tags}}</p>
                 <p>{{portfolio.name}}</p>
             </a>
+            <a class="item" ng-hide="(portfolios | filter:searchText).length">
+                <p>Keine Treffer</p>
+            </a>
         </div>
     </ion-content>
 </ion-view>
