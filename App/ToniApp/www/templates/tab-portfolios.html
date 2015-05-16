@@ -21,7 +21,7 @@
             <a class="item" ng-switch-when="Portfolios" ng-hide="(portfolios | filter:searchText).length">
                 <p>Keine Treffer</p>
             </a>
-            <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'"  href="#/tab/persons/{{person.id}}">
+            <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'"  href="#/tab/portfolios/{{person.id}}">
                 <img ng-src="{{person.face}}">
                 <h2>{{person.name}}</h2>
                 <p>{{person.studies}}</p>
