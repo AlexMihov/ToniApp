@@ -1,12 +1,13 @@
-<ion-view view-title="{{portfolio.name}}">
+<ion-view view-title="{{currentPerson.name}}">
     <ion-content>
         <div class="">
             <div class="list">
                 <a class="item item-thumbnail-left" href="#">
-                    <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd">
-                    <h2>{{portfolio.name}}</h2>
-                    <p>DDK Film, 6. Semester</p>
-                    <p>moris.freiburghaus@zhdk.ch</p>
+                    <img ng-src="{{currentPerson.face}}">
+                    <h2>{{currentPerson.name}}</h2>
+                    <p>{{currentPerson.studies}}</p>
+                    <p>{{currentPerson.email}}</p>
+                    <p>{{currentPerson.phone}}</p>
                 </a>
                 <div class="row">
                     <div class="col centered" ng-click=""><i class="icon portfolio-social ion-at"></i></div>
@@ -18,13 +19,13 @@
             </div>
             <div></div>
             <hr style="margin:-10px 20px;">
-            <h3 class="centered">Portfolio von Moris</h3>
+            <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
             <div class="list">
-                <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:portfolio.name" href="#/tab/portfolios/{{portfolio.id}}">
+                <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/portfolios/{{portfolio.id}}">
                     <img ng-src="{{portfolio.picture}}">
                     <h2>{{portfolio.project_title}}</h2>
                     <p>{{portfolio.project_tags}}</p>
-                    <p>{{portfolio.name}}</p>
+                    <p>{{currentPerson.name}}</p>
                 </a>
             </div>
         </div>
