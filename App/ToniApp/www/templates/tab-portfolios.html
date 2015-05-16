@@ -16,7 +16,7 @@
                 <img ng-src="{{portfolio.picture}}">
                 <h2>{{portfolio.project_title}}</h2>
                 <p>{{portfolio.project_tags}}</p>
-                <p>{{portfolio.name}}</p>
+                <p>{{people[portfolio.creator_id].name}}</p>
             </a>
             <a class="item" ng-switch-when="Portfolios" ng-hide="(portfolios | filter:searchText).length">
                 <p>Keine Treffer</p>
