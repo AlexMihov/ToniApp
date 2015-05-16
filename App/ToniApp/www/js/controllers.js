@@ -44,8 +44,8 @@ angular.module('ToniApp.controllers', [])
     };
 })
 
-.controller('PortfolioCtrl', function($scope) {
-    $scope.portfolios = "Not yet implemented"
+.controller('PortfolioCtrl', function($scope, Portfolios) {
+    $scope.portfolios = Portfolios.getAll();
 })
 
 .controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries) {
