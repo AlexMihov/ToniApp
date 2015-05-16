@@ -1,9 +1,9 @@
 <ion-view view-title="Portfolios">
     <div class="tabs-striped tabs-top tabs-color-positive">
         <div class="tabs">
-            <a class="tab-item" ng-class="showFilters ? '':'active'" ng-click="displayFilter(false)">Portfolios</a>
-            <a class="tab-item" ng-class="" ng-click="displayFilter(false)">Personen</a>
-            <a class="tab-item" ng-class="showFilters ? 'active':''" ng-click="displayFilter(true)">Filter</a>
+            <a class="tab-item" ng-class="markCurrentTab('Portfolios') ? 'active':''" ng-click="setCurrentTab('Portfolios')">Portfolios</a>
+            <a class="tab-item" ng-class="markCurrentTab('Personen') ? 'active':''"  ng-click="setCurrentTab('Personen')">Personen</a>
+            <a class="tab-item" ng-class="markCurrentTab('Filter') ? 'active':''"  ng-click="setCurrentTab('Filter')">Filter</a>
         </div>
     </div>
     <ion-content>
@@ -11,14 +11,22 @@
             <i class="icon ion-search placeholder-icon"></i>
             <input type="text" placeholder="Suche" ng-model="searchText">
         </label>
-        <div class="list">
-            <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/{{portfolio.id}}">
+        <div class="list" ng-switch on="currentTab">
+            <a class="item item-thumbnail-left" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/{{portfolio.id}}">
                 <img ng-src="{{portfolio.picture}}">
                 <h2>{{portfolio.project_title}}</h2>
                 <p>{{portfolio.project_tags}}</p>
                 <p>{{portfolio.name}}</p>
             </a>
-            <a class="item" ng-hide="(portfolios | filter:searchText).length">
+            <a class="item" ng-switch-when="Portfolios" ng-hide="(portfolios | filter:searchText).length">
+                <p>Keine Treffer</p>
+            </a>
+            <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'"  href="#/tab/persons/{{person.id}}">
+                <img ng-src="{{person.face}}">
+                <h2>{{person.name}}</h2>
+                <p>{{person.studies}}</p>
+            </a>
+            <a class="item" ng-switch-when="Personen" ng-hide="(people | filter:searchText).length">
                 <p>Keine Treffer</p>
             </a>
         </div>
