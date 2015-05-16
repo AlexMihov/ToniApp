@@ -7713,6 +7713,10 @@ h2 {
   font-family: "areal_blmedium";
   font-size: 18px !important; }
 
+h4 {
+  font-family: "areal_blmedium";
+  font-size: 18px !important; }
+
 p {
   font-family: "areal_blbook";
   font-size: 16px !important; }
@@ -7722,6 +7726,13 @@ p {
 
 .1px-divider {
   padding-top: 100px !important; }
+
+.icon.portfolio-social {
+  font-size: 30px;
+  text-align: center; }
+
+.centered {
+  text-align: center; }
 
 .bar-footer {
   overflow: visible !important; }

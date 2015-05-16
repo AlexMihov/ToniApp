@@ -44,6 +44,19 @@ angular.module('ToniApp.controllers', [])
     };
 })
 
+.controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios) {
+    var currentID = $stateParams.portfolioId;
+    $scope.portfolios = Portfolios.getAll();
+    $scope.portfolio = Portfolios.get(currentID);
+
+    $scope.gotoMessage = function() {
+        $location.path('/tab/market/' + currentID + '/message');
+    }
+    $scope.remove = function(chat) {
+        Chats.remove(chat);
+    }
+})
+
 .controller('PortfolioCtrl', function($scope, Portfolios) {
     $scope.portfolios = Portfolios.getAll();
 })

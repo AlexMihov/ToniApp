@@ -5,7 +5,7 @@
             <input type="text" placeholder="Suche" ng-model="searchText">
         </label>
         <div class="list">
-            <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:searchText" href="#">
+            <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/{{portfolio.id}}">
                 <img ng-src="{{portfolio.picture}}">
                 <h2>{{portfolio.project_title}}</h2>
                 <p>{{portfolio.project_tags}}</p>

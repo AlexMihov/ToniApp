@@ -37,24 +37,24 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
     })
 
     .state('tab.market-new', {
-        url: '/market/new',
-        views: {
-            'tab-market': {
-                templateUrl: 'templates/tab-market-new.html',
-                controller: 'MarketCtrl'
+            url: '/market/new',
+            views: {
+                'tab-market': {
+                    templateUrl: 'templates/tab-market-new.html',
+                    controller: 'MarketCtrl'
+                }
             }
-        }
-    })
-    // Each tab has its own nav history stack:
-    .state('tab.market-detail', {
-        url: '/market/:marketEntryID',
-        views: {
-            'tab-market': {
-                templateUrl: 'templates/tab-market-detail.html',
-                controller: 'MarketDetailCtrl'
+        })
+        // Each tab has its own nav history stack:
+        .state('tab.market-detail', {
+            url: '/market/:marketEntryID',
+            views: {
+                'tab-market': {
+                    templateUrl: 'templates/tab-market-detail.html',
+                    controller: 'MarketDetailCtrl'
+                }
             }
-        }
-    })
+        })
 
     .state('tab.market-message', {
         url: '/market/:marketEntryID/message',
@@ -112,6 +112,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
                 'tab-portfolios': {
                     templateUrl: 'templates/tab-portfolios.html',
                     controller: 'PortfolioCtrl'
+                }
+            }
+        })
+        .state('tab.portfolios-detail', {
+            url: '/portfolios/:portfolioId',
+            views: {
+                'tab-portfolios': {
+                    templateUrl: 'templates/tab-portfolios-details.html',
+                    controller: 'PortfolioDetailCtrl'
                 }
             }
         });
