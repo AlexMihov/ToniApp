@@ -1,60 +1,44 @@
-<ion-view view-title="Account">
-    <ion-content>
-        <ul class="list">
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            <li class="item item-toggle">
-                HTML5
-                <label class="toggle toggle-assertive">
-                    <input type="checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-        </ul>
+<ion-view view-title="Profil">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear button-positive" ng-click="handleTopButton()">
+            <i class="icon ion-ios-plus-empty"></i>
+        </button>
+    </ion-nav-buttons>
+    <div class="tabs-striped tabs-top tabs-color-positive">
+        <div class="tabs">
+            <a class="tab-item" ng-class="markCurrentTab('preview') ? 'active':''" ng-click="setCurrentTab('preview')">Mein Profil</a>
+            <a class="tab-item" ng-class="markCurrentTab('edit') ? 'active':''" ng-click="setCurrentTab('edit')">Bearbeiten</a>
+        </div>
+    </div>
+    <ion-content ng-switch on="currentTab">
+        <div style="margin-top:48px;" ng-switch-when="preview">
+            <div class="list">
+                <a class="item item-thumbnail-left" href="#">
+                    <img ng-src="{{currentPerson.face}}">
+                    <h2>{{currentPerson.name}}</h2>
+                    <p>{{currentPerson.studies}}</p>
+                    <p>{{currentPerson.email}}</p>
+                    <p>{{currentPerson.phone}}</p>
+                </a>
+                <div class="row">
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-at"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-ios-telephone"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-facebook"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-twitter"></i></div>
+                    <div class="col centered" ng-click=""><i class="icon portfolio-social ion-social-vimeo"></i></div>
+                </div>
+            </div>
+            <div></div>
+            <hr style="margin:-10px 20px;">
+            <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
+            <div class="list">
+                <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/portfolios/project/{{portfolio.id}}">
+                    <img ng-src="{{portfolio.picture}}">
+                    <h2>{{portfolio.project_title}}</h2>
+                    <p>{{portfolio.project_tags}}</p>
+                    <p>{{currentPerson.name}}</p>
+                </a>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

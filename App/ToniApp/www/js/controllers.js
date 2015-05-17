@@ -38,10 +38,26 @@ angular.module('ToniApp.controllers', [])
     }
 })
 
-.controller('AccountCtrl', function($scope) {
-    $scope.settings = {
-        enableFriends: true
-    };
+.controller('AccountCtrl', function($scope, Portfolios, Person) {
+    $scope.currentTab = 'preview';
+    var currentID = 7;
+    $scope.portfolios = Portfolios.getAll();
+    $scope.currentPerson = Person.get(currentID);
+
+    $scope.setCurrentTab = function(tabName){
+    	$scope.currentTab = tabName;
+    }
+
+    $scope.getFirstName = function(fullName) {
+        return fullName.split(' ')[0];
+    }
+    $scope.markCurrentTab = function(tabName) {
+        if ($scope.currentTab === tabName) {
+            return true;
+        } else {
+            return false;
+        };
+    }
 })
 
 .controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
@@ -61,8 +77,8 @@ angular.module('ToniApp.controllers', [])
     $scope.currentPortfolio = Portfolios.get(currentID);
     $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
 
-    $scope.prepareUrlForIframe = function (url){
-    	return $sce.trustAsResourceUrl(url);
+    $scope.prepareUrlForIframe = function(url) {
+        return $sce.trustAsResourceUrl(url);
     }
 
 })
@@ -74,7 +90,7 @@ angular.module('ToniApp.controllers', [])
     $scope.showGrid = false;
 
     $scope.handleTopButton = function() {
-    	$scope.showGrid = !$scope.showGrid;
+        $scope.showGrid = !$scope.showGrid;
     }
 
     $scope.markCurrentTab = function(tabName) {
