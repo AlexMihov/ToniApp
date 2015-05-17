@@ -6,24 +6,23 @@ angular.module('ToniApp.services')
     // Some fake testing data
     var portfolios = [{
         id: 0,
-        creator_id: 1,
-        project_title: 'Doh-Lock',
-        project_tags: 'Konzept, Design',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+        creator_id: 7,
+        project_title: 'Toni App',
+        project_tags: 'Design, App, Toni',
+        picture: 'http://i.imgur.com/ADK9LpZ.jpg',
         banner: {
-            type: 'video',
-            url: 'https://www.youtube.com/embed/PulHR2LfPVk'
+            type: 'picture',
+            url: 'http://i.imgur.com/ADK9LpZ.jpg'
         },
         paragraphs: [{
             title: '',
-            content: 'Als langjährige Liebhaberin von den Simpsons, wollte ich umbedingt ein Produkt entwerfen, welches den Humor und Stil der Simpsons beinhaltet. Der Doh-Lock nimmt Homers beliebten Spruch und macht aus ihm ein einzigartiges Schloss, welches jeden zum Schmunzeln bringen wird.',
-            media: {
-                type: 'picture',
-                url: ''
-            }
+            content: 'Während meiner Studienzeit hat mir ein App, welches den Studienalltag am ToniAreal vereinfacht täglich gefehlt. Aus diesem Grund habe ich mir vorgenommen, als meine Bachelorarbeit das Design für ebendieses App zu entwerfen.'
         }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: 'Design',
+            content: 'In vielen Iterationen habe ich ein initiales Design entworfen, welches meinen die verschiedenen Funktionen der zukünftigen ToniApp darstellen. Dieses wurde danach auf iPhone-grossen Kärtchen gedruckt und in meinen Befragungen verwendet.            Die Befragten mussten dabei die Karten in die Hand nehmen und die "App" bedienen als wäre es ein echtes Handy.'
+        }, {
+            title: 'Prototyp',
+            content: 'Nach dem Testen mit den Kartonkärtchen wollte ich noch eine bessere Vorstellung erhalten, wie ein fertiges App funktionieren könnte. Daher habe ich mich nach einer Person umgesehen, welche über das nötige Know-How verfügt. Auf diese Weise habe ich Alex Mihov, einen Informatikstudent der ZHAW kennen gelernt und wir haben zusammen die App auf die Beine gestellt.'
         }]
     }, {
         id: 1,
@@ -101,17 +100,24 @@ angular.module('ToniApp.services')
         }]
     }, {
         id: 6,
-        creator_id: 7,
-        project_title: 'Ballet Abend',
-        project_tags: 'Tanzen, Ballet',
-        picture: 'http://bachtrack.com/files/1097-1498-marianela_nunez_and_thiago_soares_in_swan_lake._photo_alice_pennefather__courtesy_of_roh.jpg',
+        creator_id: 1,
+        project_title: 'Doh-Lock',
+        project_tags: 'Konzept, Design',
+        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
         banner: {
-            type: 'picture',
-            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+            type: 'video',
+            url: 'https://www.youtube.com/embed/PulHR2LfPVk'
         },
         paragraphs: [{
             title: '',
-            content: ''
+            content: 'Als langjährige Liebhaberin von den Simpsons, wollte ich umbedingt ein Produkt entwerfen, welches den Humor und Stil der Simpsons beinhaltet. Der Doh-Lock nimmt Homers beliebten Spruch und macht aus ihm ein einzigartiges Schloss, welches jeden zum Schmunzeln bringen wird.',
+            media: {
+                type: 'picture',
+                url: ''
+            }
+        }, {
+            title: 'Paragraph Nr2',
+            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
         }]
     }, {
         id: 7,
