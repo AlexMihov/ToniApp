@@ -7748,13 +7748,13 @@ p {
   width: 100%; }
 
 .neg-6px-margin {
-  margin: -6px; }
+  margin-left: -6px; }
 
 .padding-25px {
   padding-left: 25px; }
 
 .skip-nav-bar-margin {
-  margin-top: 48px; }
+  margin-top: 48px !important; }
 
 .bar-footer {
   overflow: visible !important; }
