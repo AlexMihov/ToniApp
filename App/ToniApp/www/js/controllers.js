@@ -90,6 +90,17 @@ angular.module('ToniApp.controllers', [])
     }
 })
 
+.filter('PortfolioRows', function() {
+    return function(arrayLength) {
+        arrayLength = Math.ceil(arrayLength);
+        var arr = new Array(arrayLength);
+        for (i = 0; i < arrayLength; i++) {
+            arr[i] = i;
+        }
+        return arr;
+    };
+})
+
 
 .controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries) {
     var currentID = $stateParams.marketEntryID;
