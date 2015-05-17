@@ -18,9 +18,9 @@
             <input type="text" placeholder="Suche" ng-model="searchText">
         </label>
         <div class="list">
-            <div class="row" ng-repeat="tripples in (portfolios.length/3 | PortfolioRows)" ng-switch-when="Portfolios" ng-if="showGrid">
-                <div ng-repeat="portfolio in portfolios.slice(3*$index, 3*$index + 3)" class="col col-33">
-                    <img ng-src="{{portfolio.picture}}" style="width:100%;">
+            <div class="row" ng-repeat="tripples in (portfolios.length/3 | PortfolioRows ) " ng-switch-when="Portfolios" ng-if="showGrid">
+                <div ng-repeat="portfolio in (portfolios | filter:searchText).slice(3*$index, 3*$index + 3)" class="col col-33">
+                	<a href="#/tab/portfolios/project/{{portfolio.id}}"><img ng-src="{{portfolio.picture}}" style="width:100%;"></a>
                 </div>
             </div>
             <a class="item item-thumbnail-left" ng-if="!showGrid" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/project/{{portfolio.id}}">
