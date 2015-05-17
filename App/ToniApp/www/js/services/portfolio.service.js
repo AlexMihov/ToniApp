@@ -10,10 +10,14 @@ angular.module('ToniApp.services')
         project_title: 'Doh-Lock',
         project_tags: 'Konzept, Design',
         picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+        banner: {
+            type: 'video',
+            url: 'https://www.youtube.com/embed/PulHR2LfPVk'
+        },
         paragraphs: [{
             title: '',
             content: 'Als langjährige Liebhaberin von den Simpsons, wollte ich umbedingt ein Produkt entwerfen, welches den Humor und Stil der Simpsons beinhaltet. der Doh-Lock nimmt Homers beliebten Spruch und macht aus ihm ein einzigartiges Schloss, welches jeden zum Schmunzeln bringen wird.',
-            media :{
+            media: {
                 type: 'picture',
                 url: ''
             }
@@ -27,6 +31,10 @@ angular.module('ToniApp.services')
         project_title: 'Luzerner Bier Redesign',
         project_tags: 'Grafik',
         picture: 'http://www.wineware.co.uk/content/images/thumbs/0010058_schott-zwiesel-beer-basic-small-beer-glasses-set-of-6.jpeg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: 'asdasdasd'
@@ -37,10 +45,14 @@ angular.module('ToniApp.services')
         project_title: 'Jazz Konzert',
         project_tags: 'Musik, Jazz',
         picture: 'http://www.audiophileusa.com/covers400water/23108.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: 'asdasdasdasd',
-            media :{
+            media: {
                 type: 'picture',
                 url: ''
             }
@@ -51,6 +63,10 @@ angular.module('ToniApp.services')
         project_title: 'Mode Kollektion',
         project_tags: 'Konzept, Kleidung',
         picture: 'http://fashionsup.com/wp-content/uploads/2012/05/how-to-draw-fashion-sketches.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: 'asdasdasdas'
@@ -61,6 +77,10 @@ angular.module('ToniApp.services')
         project_title: 'Pop-Art Ausstellung',
         project_tags: 'Kunst, Pop-Art',
         picture: 'http://art-canyon.com/pop-art/wp-content/uploads/2010/08/james-dean-pop-art.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: ''
@@ -71,6 +91,10 @@ angular.module('ToniApp.services')
         project_title: 'Retro Werbung',
         project_tags: 'Film, Werbung, Retro',
         picture: 'https://www.tradebit.com/usr/beulah/pub/9002/8552600_332smx.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: ''
@@ -81,6 +105,10 @@ angular.module('ToniApp.services')
         project_title: 'Ballet Abend',
         project_tags: 'Tanzen, Ballet',
         picture: 'http://bachtrack.com/files/1097-1498-marianela_nunez_and_thiago_soares_in_swan_lake._photo_alice_pennefather__courtesy_of_roh.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: ''
@@ -91,6 +119,10 @@ angular.module('ToniApp.services')
         project_title: 'Ringo',
         project_tags: 'Western, Film',
         picture: 'http://i.imgur.com/u8hiSPa.jpg',
+        banner: {
+            type: 'picture',
+            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+        },
         paragraphs: [{
             title: '',
             content: ''

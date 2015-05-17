@@ -55,11 +55,15 @@ angular.module('ToniApp.controllers', [])
 
 })
 
-.controller('PortfolioProjectDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
+.controller('PortfolioProjectDetailCtrl', function($scope, $location, $stateParams, $sce, Portfolios, Person) {
     var currentID = $stateParams.portfolioId;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPortfolio = Portfolios.get(currentID);
     $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
+
+    $scope.prepareUrlForIframe = function (url){
+    	return $sce.trustAsResourceUrl(url);
+    }
 
 })
 

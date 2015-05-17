@@ -1,8 +1,7 @@
 <ion-view view-title="{{currentPortfolio.project_title}}">
-    <ion-content class="padding">
-        <img class="portfolio-image" ng-src="http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg">
-        <iframe width="100%" height="185" src="https://www.youtube.com/embed/ASj81daun5Q" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://player.vimeo.com/video/126580704" width="300" height="185" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <ion-content class="padding" overflow-scroll="true" ng-switch="currentPortfolio.banner.type">
+        <img ng-switch-when="picture" class="portfolio-image" ng-src="{{currentPortfolio.banner.url}}">
+        <iframe ng-switch-when="video" width="100%" height="185" ng-src="{{prepareUrlForIframe(currentPortfolio.banner.url)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div ng-repeat="paragraph in currentPortfolio.paragraphs">
             <h2 ng-show="paragraph.title">{{paragraph.title}}</h2>
             <p>
@@ -19,6 +18,7 @@
                 <p>{{currentPerson.phone}}</p>
             </a>
         </div>
-
+ <br>
     </ion-content>
+
 </ion-view>
