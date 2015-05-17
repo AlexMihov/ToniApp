@@ -49,9 +49,17 @@ angular.module('ToniApp.controllers', [])
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
 
-    $scope.getFirstName = function(fullName){
-    	return fullName.split(' ')[0];
+    $scope.getFirstName = function(fullName) {
+        return fullName.split(' ')[0];
     }
+
+})
+
+.controller('PortfolioProjectDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
+    var currentID = $stateParams.portfolioId;
+    $scope.portfolios = Portfolios.getAll();
+    $scope.currentPortfolio = Portfolios.get(currentID);
+    $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
 
 })
 
@@ -69,8 +77,8 @@ angular.module('ToniApp.controllers', [])
         }
     }
 
-    $scope.setCurrentTab = function (tabName) {
-    	$scope.currentTab = tabName;
+    $scope.setCurrentTab = function(tabName) {
+        $scope.currentTab = tabName;
     }
 })
 

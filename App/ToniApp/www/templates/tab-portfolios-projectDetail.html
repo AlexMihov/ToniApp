@@ -1,0 +1,20 @@
+<ion-view view-title="{{currentPortfolio.project_title}}">
+    <ion-content class="padding">
+        <img class="portfolio-image" ng-src="http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg">
+        <div ng-repeat="paragraph in currentPortfolio.paragraphs">
+            <h2 ng-show="paragraph.title">{{paragraph.title}}</h2>
+            <p>
+                {{paragraph.content}}
+            </p>
+        </div>
+        <div class="list">
+            <a class="item item-thumbnail-left" href="#">
+                <img ng-src="{{currentPerson.face}}">
+                <h2>{{currentPerson.name}}</h2>
+                <p>{{currentPerson.studies}}</p>
+                <p>{{currentPerson.email}}</p>
+                <p>{{currentPerson.phone}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

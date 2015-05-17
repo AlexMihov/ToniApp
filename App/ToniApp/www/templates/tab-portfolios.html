@@ -7,12 +7,12 @@
         </div>
     </div>
     <ion-content>
-        <label class="item item-input searchbar">
+        <label ng-hide="markCurrentTab('Filter')" class="item item-input searchbar">
             <i class="icon ion-search placeholder-icon"></i>
             <input type="text" placeholder="Suche" ng-model="searchText">
         </label>
         <div class="list" ng-switch on="currentTab">
-            <a class="item item-thumbnail-left" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/{{portfolio.id}}">
+            <a class="item item-thumbnail-left" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/project/{{portfolio.id}}">
                 <img ng-src="{{portfolio.picture}}">
                 <h2>{{portfolio.project_title}}</h2>
                 <p>{{portfolio.project_tags}}</p>

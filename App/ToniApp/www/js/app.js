@@ -123,6 +123,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
                     controller: 'PortfolioDetailCtrl'
                 }
             }
+        })
+        .state('tab.portfolios-projectDetail', {
+            url: '/portfolios/project/:portfolioId',
+            views: {
+                'tab-portfolios': {
+                    templateUrl: 'templates/tab-portfolios-projectDetail.html',
+                    controller: 'PortfolioProjectDetailCtrl'
+                }
+            }
         });
 
     // if none of the above states are matched, use this as the fallback
