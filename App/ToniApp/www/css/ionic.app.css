@@ -7678,12 +7678,16 @@ a.button {
 .centered-button-75 {
   display: block;
   width: 75%;
-  margin: 0px auto; }
+  margin: 0px auto !important;
+  font-family: "areal_blmedium";
+  font-size: 18px !important; }
 
 .centered-button-50 {
   display: block;
   width: 50%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  font-family: "areal_blmedium";
+  font-size: 18px; }
 
 .list .item.item-accordion {
   line-height: 38px;
@@ -7792,11 +7796,11 @@ img.profile-pic.left {
 img.profile-pic.right {
   right: 10px; }
 
-.ion-email {
-  float: right;
-  font-size: 32px;
-  vertical-align: middle; }
-
+/*.ion-email {
+    float: right;
+    font-size: 32px;
+    vertical-align: middle;
+}*/
 .message {
   font-size: 14px; }
 

@@ -22,13 +22,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .centered-button-75 {
     display: block;
     width: 75%;
-    margin: 0px auto;
+    margin: 0px auto !important;
+    font-family: "areal_blmedium";
+    font-size: 18px !important;
 }
 
 .centered-button-50 {
     display: block;
     width: 50%;
     margin: 0px auto;
+    font-family: "areal_blmedium";
+    font-size: 18px;
 }
 
 textarea {
@@ -181,11 +185,11 @@ img.profile-pic.right {
     right: 10px;
 }
 
-.ion-email {
+/*.ion-email {
     float: right;
     font-size: 32px;
     vertical-align: middle;
-}
+}*/
 
 .message {
     font-size: 14px;
