@@ -71,6 +71,7 @@ angular.module('ToniApp.controllers', [])
     var currentID = $stateParams.portfolioId;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
+    
 
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];

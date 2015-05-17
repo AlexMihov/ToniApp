@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -18,11 +18,20 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             // org.apache.cordova.statusbar required
             StatusBar.styleLightContent();
         }
+        $rootScope.notImplemented = function(text) {
+            if (text) {
+                alert(text);
+            } else {
+                alert('Diese Funktion ist im Prototyp nicht implementiert.')
+            }
+        };
     });
+
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
+     $ionicConfigProvider.backButton.previousTitleText(false).text('');
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.

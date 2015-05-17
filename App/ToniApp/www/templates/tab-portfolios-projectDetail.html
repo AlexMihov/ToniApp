@@ -2,14 +2,14 @@
     <ion-content class="padding" overflow-scroll="true" ng-switch="currentPortfolio.banner.type">
         <img ng-switch-when="picture" class="portfolio-image" ng-src="{{currentPortfolio.banner.url}}">
         <iframe ng-switch-when="video" width="100%" height="185" ng-src="{{prepareUrlForIframe(currentPortfolio.banner.url)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div ng-repeat="paragraph in currentPortfolio.paragraphs">
+        <div ng-repeat="paragraph in currentPortfolio.paragraphs" ng-switch on="paragraph.type">
             <h2 ng-show="paragraph.title">{{paragraph.title}}</h2>
             <p>
                 {{paragraph.content}}
             </p>
         </div>
         <div class="list">
-        <h2>Erstellt von</h2>
+            <h2>Erstellt von</h2>
             <a class="item item-thumbnail-left" href="#/tab/portfolios/{{currentPerson.id}}">
                 <img ng-src="{{currentPerson.face}}">
                 <h2>{{currentPerson.name}}</h2>
@@ -18,7 +18,6 @@
                 <p>{{currentPerson.phone}}</p>
             </a>
         </div>
- <br>
+        <br>
     </ion-content>
-
 </ion-view>
