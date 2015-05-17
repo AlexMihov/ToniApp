@@ -1,8 +1,8 @@
 <ion-view view-title="Marktplatz">
     <ion-nav-buttons side="secondary">
-        <button class="button button-clear button-positive" ng-click="handleTopButton()">
-            <i ng-hide="showFilters" class="icon ion-ios-plus-empty"></i>
-            <i ng-hide="!showFilters">Reset</i>
+        <button class="button button-clear button-positive" ng-switch="showFilters"ng-click="handleTopButton()">
+            <i ng-switch-when="false" class="icon ion-ios-plus-empty"></i>
+            <i ng-switch-when="true">Reset</i>
         </button>
     </ion-nav-buttons>
     <div class="tabs-striped tabs-top tabs-color-positive">
