@@ -40,6 +40,26 @@
             <a class="item" ng-switch-when="Personen" ng-hide="(people | filter:searchText).length">
                 <p>Keine Treffer</p>
             </a>
+
+            <ion-list ng-switch-when="Filter">
+            <h5 class="padding skip-nav-bar-margin">
+                Projekte anzeigen von:
+            </h5>
+            <div ng-repeat="filter in filters">
+                <ion-item class="item-stable item-icon-right neg-6px-margin" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
+                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+                </ion-item>
+                <ion-item class="item-accordion padding-25px" ng-repeat="item in filter.items" ng-show="filter.active">
+                    {{item.name}}
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox" checked>
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </ion-item>
+            </div>
+        </ion-list>
         </div>
     </ion-content>
 </ion-view>

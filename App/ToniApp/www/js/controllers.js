@@ -44,8 +44,15 @@ angular.module('ToniApp.controllers', [])
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
 
-    $scope.setCurrentTab = function(tabName){
-    	$scope.currentTab = tabName;
+    $scope.setCurrentTab = function(tabName) {
+        $scope.currentTab = tabName;
+    }
+    $scope.displayFilter = function(show) {
+        if (show) {
+            $scope.showFilters = true;
+        } else if (!show) {
+            $scope.showFilters = false;
+        }
     }
 
     $scope.getFirstName = function(fullName) {
@@ -83,11 +90,20 @@ angular.module('ToniApp.controllers', [])
 
 })
 
-.controller('PortfolioCtrl', function($scope, Portfolios, Person) {
+.controller('PortfolioCtrl', function($scope, Portfolios, Person, Filters) {
     $scope.portfolios = Portfolios.getAll();
+    $scope.filters = Filters.getAll();
     $scope.people = Person.getAll();
     $scope.currentTab = "Portfolios";
     $scope.showGrid = false;
+
+    $scope.toggleFilter = function(filter) {
+        filter.active = !filter.active;
+
+    };
+    $scope.isFilterShown = function(filter) {
+        return $scope.shownFilter === filter;
+    };
 
     $scope.handleTopButton = function() {
         $scope.showGrid = !$scope.showGrid;

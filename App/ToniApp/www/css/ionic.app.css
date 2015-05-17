@@ -7753,6 +7753,9 @@ p {
 .padding-25px {
   padding-left: 25px; }
 
+.skip-nav-bar-margin {
+  margin-top: 48px; }
+
 .bar-footer {
   overflow: visible !important; }
 
