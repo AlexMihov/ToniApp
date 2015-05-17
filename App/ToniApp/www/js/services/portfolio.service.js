@@ -12,7 +12,11 @@ angular.module('ToniApp.services')
         picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
         paragraphs: [{
             title: '',
-            content: 'Als langjährige Liebhaberin von den Simpsons, wollte ich umbedingt ein Produkt entwerfen, welches den Humor und Stil der Simpsons beinhaltet. der Doh-Lock nimmt Homers beliebten Spruch und macht aus ihm ein einzigartiges Schloss, welches jeden zum Schmunzeln bringen wird.'
+            content: 'Als langjährige Liebhaberin von den Simpsons, wollte ich umbedingt ein Produkt entwerfen, welches den Humor und Stil der Simpsons beinhaltet. der Doh-Lock nimmt Homers beliebten Spruch und macht aus ihm ein einzigartiges Schloss, welches jeden zum Schmunzeln bringen wird.',
+            media :{
+                type: 'picture',
+                url: ''
+            }
         }, {
             title: 'Paragraph Nr2',
             content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
@@ -35,7 +39,11 @@ angular.module('ToniApp.services')
         picture: 'http://www.audiophileusa.com/covers400water/23108.jpg',
         paragraphs: [{
             title: '',
-            content: 'asdasdasdasd'
+            content: 'asdasdasdasd',
+            media :{
+                type: 'picture',
+                url: ''
+            }
         }]
     }, {
         id: 3,

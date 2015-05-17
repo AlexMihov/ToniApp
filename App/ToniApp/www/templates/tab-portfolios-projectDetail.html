@@ -1,6 +1,8 @@
 <ion-view view-title="{{currentPortfolio.project_title}}">
     <ion-content class="padding">
         <img class="portfolio-image" ng-src="http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg">
+        <iframe width="100%" height="185" src="https://www.youtube.com/embed/ASj81daun5Q" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/126580704" width="300" height="185" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div ng-repeat="paragraph in currentPortfolio.paragraphs">
             <h2 ng-show="paragraph.title">{{paragraph.title}}</h2>
             <p>
@@ -8,7 +10,8 @@
             </p>
         </div>
         <div class="list">
-            <a class="item item-thumbnail-left" href="#">
+        <h2>Erstellt von</h2>
+            <a class="item item-thumbnail-left" href="#/tab/portfolios/{{currentPerson.id}}">
                 <img ng-src="{{currentPerson.face}}">
                 <h2>{{currentPerson.name}}</h2>
                 <p>{{currentPerson.studies}}</p>
@@ -16,5 +19,6 @@
                 <p>{{currentPerson.phone}}</p>
             </a>
         </div>
+
     </ion-content>
 </ion-view>

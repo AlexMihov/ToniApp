@@ -15,7 +15,7 @@
         <br>
         <br>
         <ion-list ng-hide="showFilters">
-            <ion-item class="item-remove-animate item item-icon-right item-text-wrap " ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
+            <ion-item class="item-remove-animate item item-icon-right item-text-wrap neg-6px-margin" ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
                 <h2>{{marketEntry.title}}</h2>
                 <p>{{marketEntry.content}}</p>
                 <i class="icon ion-chevron-right icon-accessory"></i>
@@ -29,10 +29,10 @@
                 Projekte anzeigen von:
             </h5>
             <div ng-repeat="filter in filters">
-                <ion-item class="item-stable item-icon-right" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
+                <ion-item class="item-stable item-icon-right neg-6px-margin" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
                     {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
                 </ion-item>
-                <ion-item class="item-accordion" ng-repeat="item in filter.items" ng-show="filter.active">
+                <ion-item class="item-accordion padding-25px" ng-repeat="item in filter.items" ng-show="filter.active">
                     {{item.name}}
                     <label class="toggle toggle-positive">
                         <input type="checkbox" checked>

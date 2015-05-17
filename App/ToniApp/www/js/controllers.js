@@ -66,8 +66,12 @@ angular.module('ToniApp.controllers', [])
 .controller('PortfolioCtrl', function($scope, Portfolios, Person) {
     $scope.portfolios = Portfolios.getAll();
     $scope.people = Person.getAll();
-
     $scope.currentTab = "Portfolios";
+    $scope.showGrid = false;
+
+    $scope.handleTopButton = function() {
+    	$scope.showGrid = !$scope.showGrid;
+    }
 
     $scope.markCurrentTab = function(tabName) {
         if (tabName === $scope.currentTab) {
