@@ -13,8 +13,8 @@
     <ion-content ng-switch on="currentTab">
         <div class="skip-nav-bar-margin" ng-switch-when="preview">
             <div class="list">
-                <a class="item item-thumbnail-left" href="#">
-                    <img ng-src="{{currentPerson.face}}">
+                <a class="item item-thumbnail-left" id="userCard" href="#" ng-click="expandCard()">
+                    <img id="portrait" ng-src="{{currentPerson.face}}">
                     <h2>{{currentPerson.name}}</h2>
                     <p>{{currentPerson.studies}}</p>
                     <p>{{currentPerson.email}}</p>

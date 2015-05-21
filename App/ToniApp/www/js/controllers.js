@@ -41,8 +41,22 @@ angular.module('ToniApp.controllers', [])
 .controller('AccountCtrl', function($scope, Portfolios, Person) {
     $scope.currentTab = 'preview';
     var currentID = 7;
+    var view_expanded = false;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
+
+
+    $scope.expandCard = function(){
+    	if(!view_expanded){
+    		document.getElementById('portrait').setAttribute('style', "display: block; position:relative; max-width:60%; max-height:60%; margin:0 auto 20px auto; left: 0px");
+    		document.getElementById('userCard').setAttribute('style','padding-left:20px;');
+    		view_expanded = true;
+    	} else {
+    		document.getElementById('portrait').setAttribute('style', "")
+    		document.getElementById('userCard').setAttribute('style', "")
+    		view_expanded = false;
+    	}
+    }
 
     $scope.setCurrentTab = function(tabName) {
         $scope.currentTab = tabName;
