@@ -11,7 +11,7 @@ angular.module('ToniApp.services')
         email:'some_test@mail.ch',
         interests:'Regie, Schnitt, Kamera, Schauspiel',
         phone:'+41 079 956 21 75',
-        face: 'http://warriorsskateboards.com/1/images/TEAM/Warriors_Teamportraits-01.jpg'
+        face: 'img/user/Warriors_Teamportraits-01.jpg'
     }, {
         id: 1,
         name: 'Maria Feltscher',
