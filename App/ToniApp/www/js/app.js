@@ -31,7 +31,7 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-     $ionicConfigProvider.backButton.previousTitleText(false).text('');
+    $ionicConfigProvider.backButton.previousTitleText(false).text('');
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
@@ -111,6 +111,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             views: {
                 'tab-account': {
                     templateUrl: 'templates/tab-account.html',
+                    controller: 'AccountCtrl'
+                }
+            }
+        })
+        .state('tab.account-portfolio-new', {
+            url: '/account/new',
+            views: {
+                'tab-account': {
+                    templateUrl: 'templates/tab-account-new.html',
                     controller: 'AccountCtrl'
                 }
             }

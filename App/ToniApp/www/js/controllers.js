@@ -44,12 +44,20 @@ angular.module('ToniApp.controllers', [])
     }
 })
 
-.controller('AccountCtrl', function($scope, Portfolios, Person) {
+.controller('AccountCtrl', function($scope, $location, Portfolios, Person) {
     $scope.currentTab = 'preview';
     var currentID = 7;
     $scope.view_expanded = false;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
+    $scope.newEntry ={
+        url:''
+    };
+    $scope.resetFields = function() {
+        $scope.newEntry = {
+            url:''
+        }
+    }
 
 
     $scope.expandCard = function() {
@@ -65,6 +73,9 @@ angular.module('ToniApp.controllers', [])
         } else if (!show) {
             $scope.showFilters = false;
         }
+    }
+    $scope.handleTopButton = function() {
+        $location.path('/tab/account/new');
     }
 
     $scope.getFirstName = function(fullName) {
