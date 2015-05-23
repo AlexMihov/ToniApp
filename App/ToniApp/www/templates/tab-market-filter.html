@@ -1,0 +1,21 @@
+<ion-view view-title="{{currentFilter.name}}">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear button-positive" ng-click="resetFilter()">
+            Reset
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <!--<ion-toggle ng-model="true" toggle-class="toggle-positive" ng-repeat="filter in currentFilter.items">
+            {{filter.name}}
+        </ion-toggle>-->
+        <li class="item item-toggle" ng-repeat="filter in currentFilter.items">
+            {{filter.name}}
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="filter.active">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </li>
+    </ion-content>
+</ion-view>

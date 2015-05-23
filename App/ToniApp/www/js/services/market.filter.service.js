@@ -4,41 +4,29 @@ angular.module('ToniApp.services')
 
         // Some fake testing data
         var filters = [{
-            id: 0,
-            active: false,
-            name: 'Darstellende Künste und Film',
-            items: [{
-                active: false,
-                name: 'first Filter'
-            }, {
-                active: false,
-                name: 'second Filter'
-            }]
-        }, {
             id: 1,
-            active: false,
-            name: 'Design',
+            name: 'Interessen',
             items: [{
                 active: false,
-                name: 'Cast / Audiovisuelle Medien'
+                name: 'Fotografie'
             }, {
                 active: false,
-                name: 'Game Design'
+                name: 'Geschichte'
             }, {
                 active: false,
-                name: 'Industrial Design'
+                name: 'Animation'
             }, {
                 active: false,
-                name: 'Interaction Design'
+                name: 'Schmuck'
             }, {
                 active: false,
-                name: 'Scientific Visualisation'
+                name: 'Graffiti'
             }, {
                 active: false,
-                name: 'Style & Design'
+                name: 'Skulptur'
             }, {
                 active: false,
-                name: 'Visuelle Kommunikation'
+                name: 'Schauspiel'
             }, ]
         }, {
             id: 2,
@@ -69,6 +57,14 @@ angular.module('ToniApp.services')
         return {
             getAll: function() {
                 return filters;
+            },
+            get: function(filterID){
+                for(var i=0; i<filters.length; i++){
+                    if(filters[i].id == filterID){
+                        return filters[i];
+                    }
+                }
+                return [];
             }
         };
     });

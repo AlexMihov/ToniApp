@@ -65,6 +65,16 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             }
         })
 
+        .state('tab.market-filter', {
+            url: '/market/filter/:filterID',
+            views: {
+                'tab-market': {
+                    templateUrl: 'templates/tab-market-filter.html',
+                    controller: 'MarketFilterCtrl'
+                }
+            }
+        })
+
     .state('tab.market-message', {
         url: '/market/:marketEntryID/message',
         views: {

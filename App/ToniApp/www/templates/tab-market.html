@@ -2,7 +2,7 @@
     <ion-nav-buttons side="secondary">
         <button class="button button-clear button-positive" ng-switch="showFilters"ng-click="handleTopButton()">
             <i ng-switch-when="false" class="icon ion-ios-plus-empty"></i>
-            <i ng-switch-when="true">Reset</i>
+            <!--<i ng-switch-when="true">Reset</i>-->
         </button>
     </ion-nav-buttons>
     <div class="tabs-striped tabs-top tabs-color-positive">
@@ -24,23 +24,17 @@
             </ion-item>
         </ion-list>
         <ion-list ng-show="showFilters">
-            <h2 class="padding">
-                Projekte anzeigen von:
-            </h2>
-            <div ng-repeat="filter in filters">
-                <ion-item class="item-stable item-icon-right neg-6px-margin" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
-                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
-                </ion-item>
-                <ion-item class="item-accordion padding-25px" ng-repeat="item in filter.items" ng-show="filter.active">
-                    {{item.name}}
-                    <label class="toggle toggle-positive">
-                        <input type="checkbox" checked>
-                        <div class="track">
-                            <div class="handle"></div>
-                        </div>
-                    </label>
-                </ion-item>
-            </div>
+            <ion-item class="item item-icon-right neg-6px-margin" href="#/tab/market/filter/1">
+                <p class="bigger_p">Filtern nach Interessen</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+            <ion-item class="item item-icon-right neg-6px-margin" href="#/tab/market/filter/2">
+                <p class="bigger_p">Filtern nach Studiengang</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+            <ion-item class="item item-icon-right neg-6px-margin">
+                <p class="bigger_p">Filtern nach Zeitraum</p>
+            </ion-item>
         </ion-list>
     </ion-content>
 </ion-view>

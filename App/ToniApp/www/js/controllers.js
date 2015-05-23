@@ -43,6 +43,14 @@ angular.module('ToniApp.controllers', [])
         } else {}
     }
 })
+.controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
+    var currentID = $stateParams.filterID;
+    $scope.currentFilter = Filters.get(currentID);
+    
+    $scope.resetFilter = function(){
+        notImplemented();
+    };
+})
 
 .controller('AccountCtrl', function($scope, $location, Portfolios, Person) {
     $scope.currentTab = 'preview';

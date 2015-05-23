@@ -125,6 +125,12 @@ h2 {
     color: #181818;
 }
 
+.bigger_p {
+    font-family: "areal_blbook";
+    font-size: 18px !important;
+    color: #181818;
+}
+
 h3 {
     font-family: "areal_blmedium";
     font-size: 20px !important;
@@ -148,10 +154,10 @@ p {
     padding-top: 100px !important;
 }
 
-.icon.portfolio-social {
+.icon.portfolio-social, .detail_icon {
     font-size: 30px;
     text-align: center;
-    color: #373737;
+    color: #373737 !important;
 }
 
 .centered {
@@ -182,6 +188,10 @@ p {
     display: block;
     width: 75% !important;
     margin: 10px auto;
+}
+#message_to_button{
+    margin-bottom:10px; 
+    margin-top:10px;
 }
 
 //---- CHAT

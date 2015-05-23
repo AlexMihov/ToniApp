@@ -22,22 +22,22 @@
                 </a>
                 <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg" ng-switch-when="true" ng-click="expandCard()">
                 <a class="item item-icon-left"  href="#" ng-switch-when="true">
-                    <i class="icon ion-person"></i> {{currentPerson.name}}
+                    <i class="icon ion-person detail_icon" ></i> {{currentPerson.name}}
                 </a>
                 <a class="item item-icon-left" ng-switch-when="true" href="#">
-                    <i class="icon ion-email"></i>{{currentPerson.email}}
+                    <i class="icon ion-email detail_icon"></i>{{currentPerson.email}}
                 </a>
                 <a class="item item-icon-left" ng-switch-when="true" href="#">
-                    <i class="icon ion-flash"></i> {{currentPerson.studies}}
+                    <i class="icon ion-flash detail_icon"></i> {{currentPerson.studies}}
                 </a>
-                <a class="item item-icon-left" ng-switch-when="true" href="#">
-                    <i class="icon ion-eye"></i> {{currentPerson.interests}}
+                <a class="item item-icon-left item-text-wrap" ng-switch-when="true" href="#">
+                    <i class="icon ion-eye detail_icon "></i> {{currentPerson.interests}}
                 </a>
                 <div style="padding-top:10px"></div>
-                <button class="button button-positive centered-button-38 icon-left ion-email" ng-click="gotoMessage()" style="height:30px !important;">
+                <button id ="message_to_button" class="button button-positive centered-button-38 icon-left ion-email" ng-click="gotoMessage()">
                     Nachricht
                 </button>
-                <div class="row">
+                <div class="row" style="margin-bottom:-10px;">
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-at"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-ios-telephone"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-facebook"></i></div>
