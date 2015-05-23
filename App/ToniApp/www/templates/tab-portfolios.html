@@ -33,7 +33,7 @@
                 <p>Keine Treffer</p>
             </a>
             <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'" href="#/tab/portfolios/{{person.id}}">
-                <img ng-src="/img/user/user_{{person.id}}.jpg">
+                <img ng-src="img/user/user_{{person.id}}.jpg">
                 <h2>{{person.name}}</h2>
                 <p>{{person.studies}}</p>
             </a>
