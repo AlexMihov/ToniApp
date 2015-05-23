@@ -4,16 +4,20 @@
             <h4>Info</h4>
             <p>{{marketEntry.content_long}}</p>
             <div class="1px-divider" style="height:1px;"></div>
+            <h4>Suche nach</h4>
+            <p>todo: tags</p>
+            <div class="1px-divider" style="height:1px;"></div>
             <h4>Zeitraum</h4>
             <p>{{marketEntry.timespan}}</p>
             <div class="1px-divider" style="height:1px;"></div>
             <h4>Erstellt von</h4>
             <div class="list">
                 <a class="item item-thumbnail-left" href="#">
-                    <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd">
-                    <h2>Moris Freiburghaus</h2>
-                    <p>DDK Film, 6. Semester</p>
-                    <p>moris.freiburghaus@zhdk.ch</p>
+                    <img id="portrait" ng-src="{{currentPerson.face}}">
+                    <h2>{{currentPerson.name}}</h2>
+                    <p>{{currentPerson.studies}}</p>
+                    <p>{{currentPerson.email}}</p>
+                    <p>{{currentPerson.phone}}</p>
                 </a>
             </div>
             <div class="1px-divider" style="height:1px;"></div>

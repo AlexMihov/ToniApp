@@ -12,14 +12,18 @@
     </div>
     <ion-content ng-switch on="currentTab">
         <div class="skip-nav-bar-margin" ng-switch-when="preview">
-            <div class="list">
-                <a class="item item-thumbnail-left" id="userCard" href="#" ng-click="expandCard()">
-                    <img id="portrait" ng-src="{{currentPerson.face}}">
+            <div class="list" ng-switch on="view_expanded">
+                <a class="item item-thumbnail-left" id="userCard" href="#" ng-switch-when="false" ng-click="expandCard()">
+                    <img id="portrait" ng-src="/img/user/user_{{currentPerson.id}}.jpg">
                     <h2>{{currentPerson.name}}</h2>
                     <p>{{currentPerson.studies}}</p>
                     <p>{{currentPerson.email}}</p>
                     <p>{{currentPerson.phone}}</p>
                 </a>
+                <div style="padding-top:10px"></div>
+                <button class="button button-positive centered-button-38 icon-left ion-email" ng-click="gotoMessage()" style="height:30px !important;">
+                    Nachricht
+                </button>
                 <div class="row">
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-at"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-ios-telephone"></i></div>
@@ -27,8 +31,8 @@
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-twitter"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-vimeo"></i></div>
                 </div>
+
             </div>
-            <div></div>
             <hr style="margin:-10px 20px;">
             <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
             <div class="list">
