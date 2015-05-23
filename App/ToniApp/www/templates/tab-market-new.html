@@ -1,6 +1,6 @@
 <ion-view view-title="Projekt erstellen">
     <ion-nav-buttons side="secondary">
-        <button class="button button-clear button-positive" ng-click="gotoCreateNew()">
+        <button class="button button-clear button-positive" ng-click="resetFields()">
             Löschen
         </button>
     </ion-nav-buttons>
@@ -23,13 +23,16 @@
                 <input ng-model="newEntry.to" type="date" placeholder="bis">
             </label>
             <label class="item item-input item-floating-label">
-                <span class="input-label">&nbsp;</span>
-                <input type="text" placeholder="Suche nach">
+                <span class="input-label">Suche nach</span>
+                <input ng-model="newEntry.looking_for" type="text" placeholder="Suche nach" >
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">URL</span>
                 <input ng-model="newEntry.url" type="url" placeholder="URL">
             </label>
+            <a class="item item-icon-right" id="preview_item" href="#">
+                <i class="icon ion-chevron-right icon-accessory"></i> Vorschau
+            </a>
         </div>
         <button class="button button-positive centered-button-50" ng-click="alert('Diese Funktion ist im Prototyp noch nicht implementiert!')">
             Erstellen

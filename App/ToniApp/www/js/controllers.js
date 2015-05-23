@@ -10,6 +10,14 @@ angular.module('ToniApp.controllers', [])
     };
     $scope.derp = true;
 
+    $scope.resetFields = function() {
+        $scope.newEntry = {
+            from: new Date(),
+            to: new Date(),
+            url: ''
+        };
+    }
+
     $scope.displayFilter = function(show) {
         if (show) {
             $scope.showFilters = true;
@@ -32,8 +40,7 @@ angular.module('ToniApp.controllers', [])
     $scope.handleTopButton = function() {
         if (!$scope.showFilters) {
             $scope.gotoCreateNew();
-        } else {
-        }
+        } else {}
     }
 })
 
@@ -45,16 +52,8 @@ angular.module('ToniApp.controllers', [])
     $scope.currentPerson = Person.get(currentID);
 
 
-    $scope.expandCard = function(){
-    	if(!view_expanded){
-    		//document.getElementById('portrait').setAttribute('style', "display: block; position:relative; max-width:60%; max-height:60%; margin:0 auto 20px auto; left: 0px");
-    		//document.getElementById('userCard').setAttribute('style','padding-left:20px;');
-    		view_expanded = true;
-    	} else {
-    		//document.getElementById('portrait').setAttribute('style', "")
-    		//document.getElementById('userCard').setAttribute('style', "")
-    		view_expanded = false;
-    	}
+    $scope.expandCard = function() {
+        $scope.view_expanded = !$scope.view_expanded;
     }
 
     $scope.setCurrentTab = function(tabName) {
@@ -84,7 +83,7 @@ angular.module('ToniApp.controllers', [])
     var currentID = $stateParams.portfolioId;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
-    
+
 
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];

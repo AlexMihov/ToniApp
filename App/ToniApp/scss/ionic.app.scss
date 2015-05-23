@@ -30,7 +30,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .centered-button-50 {
     display: block;
     width: 50%;
-    height:34px !important;
+    height: 34px !important;
     margin: 0px auto;
     font-family: "areal_blmedium";
     font-size: 18px;
@@ -39,20 +39,49 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .centered-button-38 {
     display: block;
     width: 38%;
-    height:34px !important;
+    height: 34px !important;
     margin: 0px auto;
     font-family: "areal_blmedium";
     font-size: 18px;
     min-height: 30px;
-   line-height: 30px;
-   
+    line-height: 30px;
 }
-.centered-button-38.icon-left:before{
-	line-height: 30px;
+
+.centered-button-38.icon-left:before {
+    line-height: 30px;
 }
 
 textarea {
-    //	width: 100%;
+    //  width: 100%;
+}
+
+.list {
+    input, textarea, .item-input, .item-input-wrapper {
+        background-color: #ffffff !important;
+        color: #181818;
+    }
+    #preview_item{
+        padding-top: 36px;
+    }
+}
+*::-webkit-input-placeholder {
+    color: #181818 !important;
+    font-size: 16px;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #181818 !important;
+    font-size: 16px;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #181818 !important;
+    font-size: 16px;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #181818 !important;
+    font-size: 16px;
 }
 
 .list .item.item-accordion {
@@ -139,22 +168,18 @@ p {
 }
 
 .padding-25px {
-    padding-left:25px;
+    padding-left: 25px;
 }
 
-.skip-nav-bar-margin{
-	margin-top: 48px !important;
+.skip-nav-bar-margin {
+    margin-top: 48px !important;
 }
 
-
-
-
-
-
-
-
-
-
+#portrait {
+    display: block;
+    width: 75% !important;
+    margin: 10px auto;
+}
 
 //---- CHAT
 .bar-footer {
@@ -200,7 +225,6 @@ img.profile-pic.left {
 img.profile-pic.right {
     right: 10px;
 }
-
 /*.ion-email {
     float: right;
     font-size: 32px;

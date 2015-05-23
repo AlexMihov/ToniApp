@@ -14,11 +14,24 @@
         <div class="skip-nav-bar-margin" ng-switch-when="preview">
             <div class="list" ng-switch on="view_expanded">
                 <a class="item item-thumbnail-left" id="userCard" href="#" ng-switch-when="false" ng-click="expandCard()">
-                    <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg">
+                    <img ng-src="img/user/user_{{currentPerson.id}}.jpg">
                     <h2>{{currentPerson.name}}</h2>
                     <p>{{currentPerson.studies}}</p>
                     <p>{{currentPerson.email}}</p>
                     <p>{{currentPerson.phone}}</p>
+                </a>
+                <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg" ng-switch-when="true" ng-click="expandCard()">
+                <a class="item item-icon-left"  href="#" ng-switch-when="true">
+                    <i class="icon ion-person"></i> {{currentPerson.name}}
+                </a>
+                <a class="item item-icon-left" ng-switch-when="true" href="#">
+                    <i class="icon ion-email"></i>{{currentPerson.email}}
+                </a>
+                <a class="item item-icon-left" ng-switch-when="true" href="#">
+                    <i class="icon ion-flash"></i> {{currentPerson.studies}}
+                </a>
+                <a class="item item-icon-left" ng-switch-when="true" href="#">
+                    <i class="icon ion-eye"></i> {{currentPerson.interests}}
                 </a>
                 <div style="padding-top:10px"></div>
                 <button class="button button-positive centered-button-38 icon-left ion-email" ng-click="gotoMessage()" style="height:30px !important;">
@@ -31,7 +44,6 @@
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-twitter"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-vimeo"></i></div>
                 </div>
-
             </div>
             <hr style="margin:-10px 20px;">
             <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
