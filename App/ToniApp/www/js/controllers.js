@@ -8,8 +8,10 @@ angular.module('ToniApp.controllers', [])
         from: new Date(),
         to: new Date()
     };
-    $scope.derp = true;
-
+    $scope.filterDates= {
+        from : new Date(),
+        to: new Date() 
+    }
     $scope.resetFields = function() {
         $scope.newEntry = {
             from: new Date(),
