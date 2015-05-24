@@ -8,49 +8,60 @@ angular.module('ToniApp.services')
             name: 'Interessen',
             items: [{
                 active: true,
+                isDivider: false,
                 name: 'Fotografie'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Geschichte'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Animation'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Schmuck'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Graffiti'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Skulptur'
             }, {
                 active: true,
+                isDivider: false,
                 name: 'Schauspiel'
             }, ]
         }, {
             id: 2,
-            active: false,
-            name: 'Kulturanalysen und Vermittlung',
+            name: 'Studiengänge',
             items: [{
-                active: false,
-                name: 'first Filter'
-            }]
-        }, {
-            id: 3,
-            active: false,
-            name: 'Kunst & Medien',
-            items: [{
-                active: false,
-                name: 'first Filter'
-            }]
-        }, {
-            id: 4,
-            active: false,
-            name: 'Filter 5',
-            items: [{
-                active: false,
-                name: 'first Filter'
+                active: true,
+                isDivider: true,
+                name: 'Design'
+            },{
+                active: true,
+                isDivider: false,
+                name: 'Cast'
+            },{
+                active: true,
+                isDivider: false,
+                name: 'Interaction Design'
+            },{
+                active: true,
+                isDivider: true,
+                name: 'Kunst'
+            },{
+                active: true,
+                isDivider: false,
+                name: 'Fotografie'
+            },{
+                active: true,
+                isDivider: false,
+                name: 'Bildhauerei'
             }]
         }];
 
@@ -58,9 +69,9 @@ angular.module('ToniApp.services')
             getAll: function() {
                 return filters;
             },
-            get: function(filterID){
-                for(var i=0; i<filters.length; i++){
-                    if(filters[i].id == filterID){
+            get: function(filterID) {
+                for (var i = 0; i < filters.length; i++) {
+                    if (filters[i].id == filterID) {
                         return filters[i];
                     }
                 }

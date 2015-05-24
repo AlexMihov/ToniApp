@@ -5,10 +5,13 @@
         </button>
     </ion-nav-buttons>
     <ion-content>
-    <div ng-repeat="filter in currentFilter.items">
-        <ion-toggle ng-model="filter.active" toggle-class="toggle-positive" >
-            {{filter.name}}
-        </ion-toggle>
-    </div>
+        <div ng-repeat="filter in currentFilter.items">
+            <div ng-if="filter.isDivider" class="item item-divider">
+                {{filter.name}}
+            </div>
+            <ion-toggle ng-model="filter.active" ng-if="!filter.isDivider" toggle-class="toggle-positive">
+                {{filter.name}}
+            </ion-toggle>
+        </div>
     </ion-content>
 </ion-view>
