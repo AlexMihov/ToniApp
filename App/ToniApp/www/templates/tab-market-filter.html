@@ -5,7 +5,11 @@
         </button>
     </ion-nav-buttons>
     <ion-content>
-        <div ng-repeat="filter in currentFilter.items">
+        <label ng-show="currentFilter.id == 1" class="item item-input searchbar">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Suche" ng-model="searchText">
+        </label>
+        <div ng-repeat="filter in currentFilter.items | filter:searchText">
             <div ng-if="filter.isDivider" class="item item-divider">
                 {{filter.name}}
             </div>
