@@ -5,17 +5,10 @@
         </button>
     </ion-nav-buttons>
     <ion-content>
-        <!--<ion-toggle ng-model="true" toggle-class="toggle-positive" ng-repeat="filter in currentFilter.items">
+    <div ng-repeat="filter in currentFilter.items">
+        <ion-toggle ng-model="filter.active" toggle-class="toggle-positive" >
             {{filter.name}}
-        </ion-toggle>-->
-        <li class="item item-toggle" ng-repeat="filter in currentFilter.items">
-            {{filter.name}}
-            <label class="toggle toggle-assertive">
-                <input type="checkbox" ng-model="filter.active">
-                <div class="track">
-                    <div class="handle"></div>
-                </div>
-            </label>
-        </li>
+        </ion-toggle>
+    </div>
     </ion-content>
 </ion-view>

@@ -46,9 +46,12 @@ angular.module('ToniApp.controllers', [])
 .controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
     var currentID = $stateParams.filterID;
     $scope.currentFilter = Filters.get(currentID);
-    
+    console.log($scope.currentFilter.items);
+
     $scope.resetFilter = function(){
-        notImplemented();
+        for (var i = 0; i < $scope.currentFilter.items.length; i++) {
+            $scope.currentFilter.items[i].active =true;
+        };
     };
 })
 

@@ -7,25 +7,25 @@ angular.module('ToniApp.services')
             id: 1,
             name: 'Interessen',
             items: [{
-                active: false,
+                active: true,
                 name: 'Fotografie'
             }, {
-                active: false,
+                active: true,
                 name: 'Geschichte'
             }, {
-                active: false,
+                active: true,
                 name: 'Animation'
             }, {
-                active: false,
+                active: true,
                 name: 'Schmuck'
             }, {
-                active: false,
+                active: true,
                 name: 'Graffiti'
             }, {
-                active: false,
+                active: true,
                 name: 'Skulptur'
             }, {
-                active: false,
+                active: true,
                 name: 'Schauspiel'
             }, ]
         }, {
