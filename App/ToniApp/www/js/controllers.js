@@ -1,6 +1,6 @@
 angular.module('ToniApp.controllers', [])
 
-.controller('MarketCtrl', function($scope, $location, $state, MarketEntries, Filters) {
+.controller('MarketCtrl', function($scope, $location, $state, $ionicScrollDelegate, MarketEntries, Filters) {
     $scope.marketEntries = MarketEntries.getAll();
     $scope.filters = Filters.getAll();
     $scope.showFilters = false;
@@ -18,6 +18,7 @@ angular.module('ToniApp.controllers', [])
             to: new Date(),
             url: ''
         };
+        $ionicScrollDelegate.scrollTop();
     }
 
     $scope.displayFilter = function(show) {
@@ -46,8 +47,12 @@ angular.module('ToniApp.controllers', [])
     }
 })
 .controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
-    var currentID = $stateParams.filterID;
-    $scope.currentFilter = Filters.get(currentID);
+    $scope.currentID = $stateParams.filterID;
+    $scope.currentFilter = Filters.get($scope.currentID);
+    $scope.filterDates = {
+        from: new Date(),
+        to: new Date()
+    }
     console.log($scope.currentFilter.items);
 
     $scope.resetFilter = function(){

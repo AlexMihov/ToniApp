@@ -63,6 +63,10 @@ angular.module('ToniApp.services')
                 isDivider: false,
                 name: 'Bildhauerei'
             }]
+        },{
+            id: 3,
+            name: 'Zeitraum',
+            items: []
         }];
 
         return {

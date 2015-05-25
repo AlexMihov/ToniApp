@@ -1,6 +1,6 @@
 <ion-view view-title="{{currentFilter.name}}">
     <ion-nav-buttons side="secondary">
-        <button class="button button-clear button-positive" ng-click="resetFilter()">
+        <button ng-hide="{{currentID == 3}}" class="button button-clear button-positive" ng-click="resetFilter()">
             Reset
         </button>
     </ion-nav-buttons>
@@ -17,5 +17,16 @@
                 {{filter.name}}
             </ion-toggle>
         </div>
+        <div ng-show="currentID == 3" class="list">
+            <label class="item item-input item-stacked-label" style="border-top:0px;">
+                <span class="input-label">Von</span>
+                <input type="date" ng-model="filterDates.from" placeholder="Von">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Bis</span>
+                <input type="date" ng-model="filterDates.to" placeholder="Bis">
+            </label>
+        </div>
+
     </ion-content>
 </ion-view>

@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
 
-.run(function($ionicPlatform, $rootScope) {
+.run(function($ionicPlatform, $rootScope, $ionicPopup) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -20,9 +20,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
         }
         $rootScope.notImplemented = function(text) {
             if (text) {
-                alert(text);
+                var alertPopup = $ionicPopup.alert({
+                    title: 'ToniApp',
+                    template: text
+                });
             } else {
-                alert('Diese Funktion ist im Prototyp nicht implementiert.')
+                var alertPopup = $ionicPopup.alert({
+                    title: '<h2>ToniApp</h2>',
+                    template: '<p style="text-align: center;">Diese Funktionalität ist in dieser Version noch nicht implmentiert!</p>'
+                });
             }
         };
     });
@@ -65,15 +71,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             }
         })
 
-        .state('tab.market-filter', {
-            url: '/market/filter/:filterID',
-            views: {
-                'tab-market': {
-                    templateUrl: 'templates/tab-market-filter.html',
-                    controller: 'MarketFilterCtrl'
-                }
+    .state('tab.market-filter', {
+        url: '/market/filter/:filterID',
+        views: {
+            'tab-market': {
+                templateUrl: 'templates/tab-market-filter.html',
+                controller: 'MarketFilterCtrl'
             }
-        })
+        }
+    })
 
     .state('tab.market-message', {
         url: '/market/:marketEntryID/message',
