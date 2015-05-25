@@ -1,15 +1,31 @@
 <ion-view view-title="{{currentPerson.name}}">
     <ion-content>
         <div class="">
-            <div class="list">
-                <a class="item item-thumbnail-left" href="#">
+            <div class="list" ng-switch on="view_expanded">
+                <a class="item item-thumbnail-left" id="userCard" href="#" ng-switch-when="false" ng-click="expandCard()">
                     <img ng-src="img/user/user_{{currentPerson.id}}.jpg">
                     <h2>{{currentPerson.name}}</h2>
                     <p>{{currentPerson.studies}}</p>
                     <p>{{currentPerson.email}}</p>
-                    <p>{{currentPerson.phone}}</p>
                 </a>
-                <div class="row">
+                <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg" ng-switch-when="true" ng-click="expandCard()">
+                <a class="item item-icon-left"  href="#" ng-switch-when="true">
+                    <i class="icon ion-person detail_icon" ></i> {{currentPerson.name}}
+                </a>
+                <a class="item item-icon-left" ng-switch-when="true" href="#">
+                    <i class="icon ion-email detail_icon"></i>{{currentPerson.email}}
+                </a>
+                <a class="item item-icon-left" ng-switch-when="true" href="#">
+                    <i class="icon ion-flash detail_icon"></i> {{currentPerson.studies}}
+                </a>
+                <a class="item item-icon-left item-text-wrap" ng-switch-when="true" href="#">
+                    <i class="icon ion-eye detail_icon "></i> {{currentPerson.interests}}
+                </a>
+                <div style="padding-top:10px"></div>
+                <button id ="message_to_button" class="button button-positive centered-button-38 icon-left ion-email" ng-click="gotoMessage()">
+                    Nachricht
+                </button>
+                <div class="row" style="margin-bottom:-10px;">
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-at"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-ios-telephone"></i></div>
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-facebook"></i></div>
@@ -17,7 +33,6 @@
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-vimeo"></i></div>
                 </div>
             </div>
-            <div></div>
             <hr style="margin:-10px 20px;">
             <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
             <div class="list">

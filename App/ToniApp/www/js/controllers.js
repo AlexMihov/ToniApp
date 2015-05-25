@@ -112,7 +112,11 @@ angular.module('ToniApp.controllers', [])
     var currentID = $stateParams.portfolioId;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
+    $scope.view_expanded = false;
 
+    $scope.expandCard = function() {
+        $scope.view_expanded = !$scope.view_expanded;
+    }
 
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
