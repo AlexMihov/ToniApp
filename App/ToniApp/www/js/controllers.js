@@ -199,6 +199,11 @@ angular.module('ToniApp.controllers', [])
     var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
     $scope.currentPerson = Person.get($scope.marketEntry.creator_id);
+
+    $scope.randomColor = function(){
+        var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        return color;
+    }
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
     }

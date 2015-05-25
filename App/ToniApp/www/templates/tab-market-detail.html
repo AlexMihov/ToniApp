@@ -5,7 +5,7 @@
             <p>{{marketEntry.content_long}}</p>
             <div class="1px-divider" style="height:1px;"></div>
             <h4>Suche nach</h4>
-            <p>todo: tags</p>
+            <p ng-repeat="tag in marketEntry.tags" class="tag_pill">{{tag}}</p>
             <div class="1px-divider" style="height:1px;"></div>
             <h4>Zeitraum</h4>
             <p>{{marketEntry.timespan}}</p>
