@@ -176,354 +176,384 @@ angular.module('ToniApp.services')
             content: ''
         }]
     }, {
-        id: 9,
+        id: 10,
         creator_id: 8,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Blickkontakte',
+        project_tags: 'Fotografie',
+        picture: 'img/portfolio/Pictures/project_10.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_10.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Blickkontakte',
+            content: 'Z-Modul 10.- 17 .September 2014. Gemeinsam erkundeten wir ihren Weg, versuchten immer mehr uns ihnen anzunähern. Geduld war gefordert. Über Stunden harrten wir im Dickicht mit unserer Sony a7s Kamera.'
         }]
     }, {
-        id: 9,
+        id: 11,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Künstlerinterwiews',
+        project_tags: 'Interview, Video, Moderation',
+        picture: 'img/portfolio/Pictures/project_11.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_11.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Künstlerinterwiews',
+            content: '„Swiss Design ist eine Balance zwischen Materialien und Ideologie“ von Adam Brody. Werkstattgespräche zum Thema „ Schweizer Design“ mit Stardesigner   Brody. Martin, Hanna und ich moderierten im Rahmen der Weltdesigntage Zürich. Eine Filmdokumentation.'
         }]
     }, {
-        id: 9,
+        id: 12,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Natura Morta',
+        project_tags: 'Installation, Gesaltung',
+        picture: 'img/portfolio/Pictures/project_12.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_12.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Natura Morta',
+            content: 'Es wurden Stimmungsbilder skizzenhaft umgesetzt und in einem Abstraktionsprozess weiterentwickelt, vergrössert und in Spachteltechnik auf 4 x 5 Meter Leinwand übertragen und gestalterisch umgesetzt.'
         }]
     }, {
-        id: 9,
+        id: 13,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Projekt in der Casa D‘Aglieri in Rimini - „Film der 60iger Jahre“',
+        project_tags: 'Szenografie, Film',
+        picture: 'img/portfolio/Pictures/project_13.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_13.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Projekt in der Casa D‘Aglieri in Rimini - „Film der 60iger Jahre“',
+            content: 'In einem Schuppen der Residenz konnten alte Filmrequisiten aus Fellini Zeiten wiederbelebt werden. Wir inszenierten Szenen der 60iger Jahren und bauten auf einem riesigen Areal reale und surreale Situationen und Installationen. '
         }]
     }, {
-        id: 9,
+        id: 14,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Schuhe heute - Schuhe gestern',
+        project_tags: 'Werbung, Mode, Dokumentation',
+        picture: 'img/portfolio/Pictures/project_14.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_14.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Schuhe heute - Schuhe gestern',
+            content: 'In dieser Fotodokumentation zum Thema Werbung der Schuhmode untersuchte ich Stil- und Gestaltungsmittel und erstellte eine 40 seitige Fotodokumentation, welche ich in der Finearts Gallerie in Krienz ausstellen konnte. '
         }]
     }, {
-        id: 9,
+        id: 15,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Concerto Lago',
+        project_tags: 'Konzert, Klassik',
+        picture: 'img/portfolio/Pictures/project_15.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_15.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Concerto Lago',
+            content: 'Mit Nina und Valerie organisierte ich ein Open-Air Sommerkonzert am unteren Zürichsee. Zusammen mit Studierenden des Departements Klassik spielten wir Werke von F. M. Bartoly und A. Bruggner. 
+Am 01.06.2014 spielten wir im Kollegium Musicum ausgewählte Werke von Stravinski, Bergolesi und Rebell. '
         }]
     }, {
-        id: 9,
+        id: 16,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Jubiliäumsabend',
+        project_tags: 'Kammermusik, Konzert',
+        picture: 'img/portfolio/Pictures/project_16.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_16.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Jubiliäumsabend',
+            content: 'Zum 100. Geburtstag von Alexander Kurinova organisierte ich ein Kammermusik-Abend im Zeichen russischer Musik. Es war eine Zusammenarbeit mit dem Strawinski Konservatorium Petersburg.'
         }]
     }, {
-        id: 9,
+        id: 17,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Christian Wolf',
+        project_tags: 'Komposition',
+        picture: 'img/portfolio/Pictures/project_17.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_17.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Christian Wolf',
+            content: 'Mit dem Komponisten Christian Wolf bearbeiteten wir sein Werk zusammen mit Studierenden  der Hochschule Luzern und dem Austerlitzer Knabenchor aus Innsbruck.'
         }]
     }, {
-        id: 9,
+        id: 18,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Kinder machen Kunst',
+        project_tags: 'Kinder, Kunst',
+        picture: 'img/portfolio/Pictures/project_18.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_18.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Kinder machen Kunst',
+            content: 'Mit Cyril und Rea konnte ich ein weiteres Mal eine Kinderkunstwoche realisieren. Es gab 3 spannende künstlerische Workshops für Kinder von 6 - 12 Jahren.'
         }]
     }, {
-        id: 9,
+        id: 19,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Cenacolo Arabesque',
+        project_tags: 'Konzert',
+        picture: 'img/portfolio/Pictures/project_19.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_19.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Cenacolo Arabesque',
+            content: 'Mit Mia und Leander hatten wir einen Auftritt im Theater Baden in Wien zusammen mit Studierenden der Ballettakademie Brünn aus Tschechien.'
         }]
     }, {
-        id: 9,
+        id: 20,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Istanbul Fever',
+        project_tags: 'Ballet, Tanz',
+        picture: 'img/portfolio/Pictures/project_20.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_20.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Istanbul Fever',
+            content: '5th international Ballet Invitation for dance and schools Istanbul .
+Aufführungen in Zusammenarbeit mit der Silbermedaillengewinnerin Misa Solowjowa.'
         }]
     }, {
-        id: 9,
+        id: 21,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Mimi',
+        project_tags: 'Fotografie, Katze',
+        picture: 'img/portfolio/Pictures/project_21.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_21.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Mimi',
+            content: 'Mit meiner neuen Canon EOS 600D machte ich erste Versuche und experimentierte mit Schärfen und Unschärfen. Mein Modell war meine zwei Monate alte Katze Mimi, die sich sichtlich wohl fühlte.'
         }]
     }, {
-        id: 9,
+        id: 22,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Musée d‘ Orsay Paris',
+        project_tags: 'Museum, Reise',
+        picture: 'img/portfolio/Pictures/project_22.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_22.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Musée d‘ Orsay Paris',
+            content: 'Mit unseren beiden Kunstdozenten Aria Farell und Diego de la Ca  besuchten wir die spannende Kunstmetropole Paris. Auf dem Programm standen, Louvre, Pompidou und das Musée d‘ Orsay. Vor allem interessant war die Spezialausstellung über Barocke Porträtkunst.'
         }]
     }, {
-        id: 9,
+        id: 23,
         creator_id: 7,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Artefacte',
+        project_tags: 'Ausstellung',
+        picture: 'img/portfolio/Pictures/project_23.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_23.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Artefacte',
+            content: 'Kunsthandwerk gestern - Kunsthandwerk heute. Mit dem Studiengang Style und Design besuchten wir die Ausstellung Artefacte in der Gallerie Gesang in Emmenbrücke. In einem anschliessenden Modul evaluierten wir die Veränderungen in der Strickmode der letzten 100 Jahre.'
         }]
     }, {
-        id: 9,
+        id: 24,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Klassenreise Lofoten',
+        project_tags: 'Reise',
+        picture: 'img/portfolio/Pictures/project_24.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_24.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Klassenreise Lofoten',
+            content: 'Unsere Klasse flog im September für eine Woche gut ausgerüstet nach Gimsoysand,  wo wir das farbenprächtige Nordlicht beobachteten und fotografieren konnten. In kalten klaren Herbstnächten den Norhimmel über sich zu erleben, war eines der eindrücklichsten Erlebnissen überhaupt.'
         }]
     }, {
-        id: 9,
+        id: 25,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Corner Brook',
+        project_tags: 'Fotografie',
+        picture: 'img/portfolio/Pictures/project_25.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_25.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Corner Brook',
+            content: 'Als passionierter Taucher hatte ich die einmalige Gelegenheit in den Riffen des Cornerbrook Rivers mit meiner Unterwasserkamera zu fotografieren. Mit einer Nikon 1 Aw1 trotzte ich den nicht einfachen Bedingungen des sehr bewegten Wassers. das Licht war trotz allem sensationell.'
         }]
     }, {
-        id: 9,
+        id: 26,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Red & Ronny',
+        project_tags: 'Animation',
+        picture: 'img/portfolio/Pictures/project_26.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_26.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Red & Ronny',
+            content: 'Ausgehend von alten Dias der Firma Franks Motion hatten wir die Aufgabe, anhand alter Dias Figuren zu übernehmen und Animationen in Form von Comics mit After Effects zu kreieren. Meine beiden Protagonisten hiessen Red & Ronny. '
         }]
     }, {
-        id: 9,
+        id: 27,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Urbanes Wohnen',
+        project_tags: 'Fotografie, Gallerie',
+        picture: 'img/portfolio/Pictures/project_27.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_27.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Urbanes Wohnen',
+            content: 'Mit einer alten analogen Zenit Kamera erforschten wir Olten. Daraus entstand eine Bildergallerie zum Thema Urbanes Wohnen. '
         }]
     }, {
-        id: 9,
+        id: 28,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Girls do fight',
+        project_tags: 'Werbung, Plakat',
+        picture: 'img/portfolio/Pictures/project_28.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_28.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Girls do fight',
+            content: 'Für Helsana mussten wir als Klassenprojekt eine Werbekampagne zum Thema  Sport & Gleichberechtigung visuell umsetzen. Daraus entstand eine Plakatserie, welche im Helsana Hauptgebäude von Mai – Juni 2015 ausgestellt ist.'
         }]
     }, {
-        id: 9,
+        id: 29,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Insieme',
+        project_tags: 'Broschüre, Grafik',
+        picture: 'img/portfolio/Pictures/project_29.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_29.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Insieme',
+            content: 'Für eine Broschüre ‘Sauberes Zürich’ versuchte ich mit inszenierten Bildern öffentliche Schauplätze zum Thema zu machen. '
         }]
     }, {
-        id: 9,
+        id: 30,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Lost Erik',
+        project_tags: 'Film',
+        picture: 'img/portfolio/Pictures/project_30.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_30.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Lost Erik',
+            content: 'In meinem Psychodrama erzähle ich die Geschichte von Erik, der auf dem Weg zu einer Kostümparty das Gedächtnis verlor.'
         }]
     }, {
-        id: 9,
+        id: 31,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Die Geldmaschine',
+        project_tags: 'Theater. Aufführung',
+        picture: 'img/portfolio/Pictures/project_31.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_31.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Die Geldmaschine',
+            content: 'Frank und Chris. 2 Schlitzohren, die mit Tricksen und Gaunereien in den Saloons von New Mexico sich über Wasser halten. Dummerweise kreuzen sich ihre Wege und altbewährte Tricke werdend vom Gegenüber durchschaut. Schnell erkennen sie, dass zu zweit die Trickserei grössere Formen annehmen kann. Sie beschliessen nach Texas zu gehen um ihr Glück zu suchen. '
         }]
     }, {
-        id: 9,
+        id: 32,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'JUNK-ROBOTS',
+        project_tags: 'Industriedesign, Roboter',
+        picture: 'img/portfolio/Pictures/project_32.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_32.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'JUNK-ROBOTS',
+            content: 'Aus altem Elektroschrott bestand die Aufgabe, Mini-Roboter mit Funktionen auszustatten, welche Leute erschrickt. Mein Modell schaffte es, mittels Blickkontakte zu hypnothisieren. '
         }]
     }, {
-        id: 9,
+        id: 33,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Zurich meets Florence',
+        project_tags: 'Musik',
+        picture: 'img/portfolio/Pictures/project_33.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_33.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Zurich meets Florence',
+            content: 'Unsere Klasse besuchte den Dom von Pisa, wo wir mit akustischen Experimenten einen Austausch mit Musikstudenten von Florenz unter der Leitung von Piero Rosalva suchten.'
         }]
     }, {
-        id: 9,
+        id: 34,
         creator_id: 1,
-        project_title: '',
-        project_tags: '',
-        picture: 'img/portfolio/Pictures/project_9.jpg',
+        project_title: 'Geräuschefänger',
+        project_tags: 'Tonmeister, Sound',
+        picture: 'img/portfolio/Pictures/project_34.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_9.jpg'
+            url: 'img/portfolio/Pictures/project_34.jpg'
         },
         paragraphs: [{
-            title: '',
-            content: ''
+            title: 'Geräuschefänger',
+            content: 'Aufgabe war es, Alltagsgeräusche im urbanen Umfeld zu sammeln und anhand eines Musikstückes von Maurice Ravel musikalisch zu interpretieren. Dazu gab es eine Aufführung aller entsandener Projekte im Rahmen der Vertiefung ‘Tonmeister’.'
+        }]
+    }, {
+        id: 35,
+        creator_id: 1,
+        project_title: 'Barcelona Reise',
+        project_tags: 'Strassenkunst, Reise',
+        picture: 'img/portfolio/Pictures/project_35.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_35.jpg'
+        },
+        paragraphs: [{
+            title: 'Barcelona Reise',
+            content: 'Unsere Fachklasse Bildende Kunst  reiste mit einem alten VW Bus nach Barcelona. Unterwegs wurde gemalt, fotografiert, wichtige Städte besucht. An der Promenade Las Ramblas auf der Plaza de Catalunya stellten wir Werke aus zum Thema Strassenkunst. Leider wurden wir nach 20 Minuten von der spanischen Polizei wegen Unruhestiftung weggeschickt. '
+        }]
+    }, {
+        id: 36,
+        creator_id: 1,
+        project_title: 'Komposition und Arrangement',
+        project_tags: 'Jazz',
+        picture: 'img/portfolio/Pictures/project_36.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_36.jpg'
+        },
+        paragraphs: [{
+            title: 'Komposition und Arrangement',
+            content: 'In der Musikkantine an der Grabenstrasse in Luzern präsentierte das Departement Jazz diverse Projekte auf Bühnen in und um Luzern. Eine Zusammenarbeit mit dem Studiengang im Profil Jazz der Hochschule Luzern.'
         }]
     }];
 
