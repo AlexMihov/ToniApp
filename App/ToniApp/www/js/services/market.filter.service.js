@@ -37,7 +37,7 @@ angular.module('ToniApp.services')
             }, ]
         }, {
             id: 2,
-            name: 'Studiengänge',
+            name: 'Vertiefungen',
             items: [{
                 active: true,
                 isDivider: true,
