@@ -7834,7 +7834,7 @@ p {
   padding: 5px 10px;
   margin-right: 10px;
   color: white;
-  border-radius: 5px 10px 5px 10px/5px 10px 5px 10px; }
+  border-radius: 5px 5px 5px 5px/5px 5px 5px 5px; }
 
 .bar-footer {
   overflow: visible !important; }

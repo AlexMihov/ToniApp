@@ -27,7 +27,7 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
             } else {
                 var alertPopup = $ionicPopup.alert({
                     title: '<h2>ToniApp</h2>',
-                    template: '<p style="text-align: center;">Diese Funktionalität ist in dieser Version noch nicht implmentiert!</p>'
+                    template: '<p style="text-align: center;">Diese Funktionalität ist in dieser Version noch nicht implementiert!</p>'
                 });
             }
         };
