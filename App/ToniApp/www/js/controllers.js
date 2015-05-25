@@ -1,66 +1,66 @@
 angular.module('ToniApp.controllers', [])
 
 .controller('MarketCtrl', function($scope, $location, $state, $ionicScrollDelegate, MarketEntries, Filters) {
-    $scope.marketEntries = MarketEntries.getAll();
-    $scope.filters = Filters.getAll();
-    $scope.showFilters = false;
-    $scope.newEntry = {
-        from: new Date(),
-        to: new Date()
-    };
-    $scope.filterDates= {
-        from : new Date(),
-        to: new Date() 
-    }
-    $scope.resetFields = function() {
+        $scope.marketEntries = MarketEntries.getAll();
+        $scope.filters = Filters.getAll();
+        $scope.showFilters = false;
         $scope.newEntry = {
             from: new Date(),
-            to: new Date(),
-            url: ''
+            to: new Date()
         };
-        $ionicScrollDelegate.scrollTop();
-    }
-
-    $scope.displayFilter = function(show) {
-        if (show) {
-            $scope.showFilters = true;
-        } else if (!show) {
-            $scope.showFilters = false;
+        $scope.filterDates = {
+            from: new Date(),
+            to: new Date()
         }
-    }
+        $scope.resetFields = function() {
+            $scope.newEntry = {
+                from: new Date(),
+                to: new Date(),
+                url: ''
+            };
+            $ionicScrollDelegate.scrollTop();
+        }
 
-    $scope.toggleFilter = function(filter) {
-        filter.active = !filter.active;
+        $scope.displayFilter = function(show) {
+            if (show) {
+                $scope.showFilters = true;
+            } else if (!show) {
+                $scope.showFilters = false;
+            }
+        }
 
-    };
-    $scope.isFilterShown = function(filter) {
-        return $scope.shownFilter === filter;
-    };
+        $scope.toggleFilter = function(filter) {
+            filter.active = !filter.active;
 
-    $scope.gotoCreateNew = function() {
-        $location.path('/tab/market/new');
-    }
-    $scope.handleTopButton = function() {
-        if (!$scope.showFilters) {
-            $scope.gotoCreateNew();
-        } else {}
-    }
-})
-.controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
-    $scope.currentID = $stateParams.filterID;
-    $scope.currentFilter = Filters.get($scope.currentID);
-    $scope.filterDates = {
-        from: new Date(),
-        to: new Date()
-    }
-    console.log($scope.currentFilter.items);
-
-    $scope.resetFilter = function(){
-        for (var i = 0; i < $scope.currentFilter.items.length; i++) {
-            $scope.currentFilter.items[i].active =true;
         };
-    };
-})
+        $scope.isFilterShown = function(filter) {
+            return $scope.shownFilter === filter;
+        };
+
+        $scope.gotoCreateNew = function() {
+            $location.path('/tab/market/new');
+        }
+        $scope.handleTopButton = function() {
+            if (!$scope.showFilters) {
+                $scope.gotoCreateNew();
+            } else {}
+        }
+    })
+    .controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
+        $scope.currentID = $stateParams.filterID;
+        $scope.currentFilter = Filters.get($scope.currentID);
+        $scope.filterDates = {
+            from: new Date(),
+            to: new Date()
+        }
+        console.log($scope.currentFilter.items);
+
+        $scope.resetFilter = function() {
+            for (var i = 0; i < $scope.currentFilter.items.length; i++) {
+                $scope.currentFilter.items[i].active = true;
+            };
+        };
+    })
 
 .controller('AccountCtrl', function($scope, $location, Portfolios, Person) {
     $scope.currentTab = 'preview';
@@ -68,12 +68,12 @@ angular.module('ToniApp.controllers', [])
     $scope.view_expanded = false;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
-    $scope.newEntry ={
-        url:''
+    $scope.newEntry = {
+        url: ''
     };
     $scope.resetFields = function() {
         $scope.newEntry = {
-            url:''
+            url: ''
         }
     }
 
@@ -165,22 +165,41 @@ angular.module('ToniApp.controllers', [])
 })
 
 .filter('PortfolioRows', function() {
-    return function(arrayLength) {
-        arrayLength = Math.ceil(arrayLength);
-        var arr = new Array(arrayLength);
-        for (i = 0; i < arrayLength; i++) {
-            arr[i] = i;
-        }
-        return arr;
-    };
-})
+        return function(arrayLength) {
+            arrayLength = Math.ceil(arrayLength);
+            var arr = new Array(arrayLength);
+            for (i = 0; i < arrayLength; i++) {
+                arr[i] = i;
+            }
+            return arr;
+        };
+    })
+    .filter('cut', function() {
+        return function(value, wordwise, max, tail) {
+            if (!value) return '';
+
+            max = parseInt(max, 10);
+            if (!max) return value;
+            if (value.length <= max) return value;
+
+            value = value.substr(0, max);
+            if (wordwise) {
+                var lastspace = value.lastIndexOf(' ');
+                if (lastspace != -1) {
+                    value = value.substr(0, lastspace);
+                }
+            }
+
+            return value + (tail || ' …');
+        };
+    })
 
 
 .controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries, Person) {
     var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
     $scope.currentPerson = Person.get($scope.marketEntry.creator_id);
-    $scope.getFirstName = function(fullName){
+    $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
     }
 

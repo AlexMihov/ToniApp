@@ -16,7 +16,7 @@
         <ion-list ng-hide="showFilters">
             <ion-item class="item-remove-animate item item-icon-right item-text-wrap neg-6px-margin" ng-repeat="marketEntry in marketEntries" type="item-text-wrap" href="#/tab/market/{{marketEntry.id}}">
                 <h2>{{marketEntry.title}}</h2>
-                <p>{{marketEntry.content}}</p>
+                <p class="giveMeEllipsis">{{marketEntry.content_long | cut:true:100:' ...'}}</p>
                 <i class="icon ion-chevron-right icon-accessory"></i>
                 <ion-option-button class="button-assertive" ng-click="remove(marketEntry)">
                     Delete
