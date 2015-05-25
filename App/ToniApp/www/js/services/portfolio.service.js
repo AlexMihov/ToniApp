@@ -29,10 +29,10 @@ angular.module('ToniApp.services')
         creator_id: 3,
         project_title: 'Innen/Aussen',
         project_tags: 'Fotografie',
-        picture: 'img/portfolio/Picture/project_1.jpg',
+        picture: 'img/portfolio/Pictures/project_1.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Picture/project_1.jpg'
+            url: 'img/portfolio/Pictures/project_1.jpg'
         },
         paragraphs: [{
             title: '',
@@ -43,14 +43,14 @@ angular.module('ToniApp.services')
         creator_id: 2,
         project_title: 'Austellung im Feuerwehrdepo in Rapperswil',
         project_tags: 'Musik, Jazz',
-        picture: 'img/portfolio/Picture/project_2.jpg',
+        picture: 'img/portfolio/Pictures/project_2.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Picture/project_2.jpg'
+            url: 'img/portfolio/Pictures/project_2.jpg'
         },
         paragraphs: [{
             title: '',
-            content: 'Für meine Fotdokumentation „ Lichtstreifen“ fotografierte ich mit einer analogen Spiegelreflexkamera während einer Woche Innenräume. Ich experimentierte mit verschiedenen  Lichtquellen. Im Fotolabor entwickelte ich meine Bilder und vergrösserte sie auf Grossformat.',
+            content: 'Für meine Fotodokumentation „Lichtstreifen“ fotografierte ich mit einer analogen Spiegelreflexkamera während einer Woche Innenräume. Ich experimentierte mit verschiedenen  Lichtquellen. Im Fotolabor entwickelte ich meine Bilder und vergrösserte sie auf Grossformat.',
             media: {
                 type: 'picture',
                 url: ''
@@ -61,10 +61,10 @@ angular.module('ToniApp.services')
         creator_id: 4,
         project_title: 'Schwarz ist mehr als eine Farbe',
         project_tags: 'Konzept, Kleidung',
-        picture: 'img/portfolio/Picture/project_3.jpg',
+        picture: 'img/portfolio/Pictures/project_3.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Picture/project_3.jpg'
+            url: 'img/portfolio/Pictures/project_3.jpg'
         },
         paragraphs: [{
             title: '',
