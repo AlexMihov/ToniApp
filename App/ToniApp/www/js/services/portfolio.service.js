@@ -35,7 +35,7 @@ angular.module('ToniApp.services')
             url: 'img/portfolio/Pictures/project_1.jpg'
         },
         paragraphs: [{
-            title: '',
+            title: 'Innen/Aussen',
             content: 'In einem Fotoprojekt in Vézelay Burgund arbeiteten wir während zwei Wochen an einem fotografischen Thema, welches mit Architektur zutun hatte. Innen und Aussenwelten flossen ineinander und liessen neue Räume entstehen.'
         }]
     }, {
@@ -49,7 +49,7 @@ angular.module('ToniApp.services')
             url: 'img/portfolio/Pictures/project_2.jpg'
         },
         paragraphs: [{
-            title: '',
+            title: 'Austellung im Feuerwehrdepo in Rapperswil',
             content: 'Für meine Fotodokumentation „Lichtstreifen“ fotografierte ich mit einer analogen Spiegelreflexkamera während einer Woche Innenräume. Ich experimentierte mit verschiedenen  Lichtquellen. Im Fotolabor entwickelte ich meine Bilder und vergrösserte sie auf Grossformat.',
             media: {
                 type: 'picture',
@@ -67,7 +67,7 @@ angular.module('ToniApp.services')
             url: 'img/portfolio/Pictures/project_3.jpg'
         },
         paragraphs: [{
-            title: '',
+            title: 'Schwarz ist mehr als eine Farbe',
             content: 'In einem interdisziplinären Modul  in Stile und Design untesuchten Jan, Fabienne und ich die Bedeutung der Farbe „ Schwarz „ in der Mode der letzten 100 Jahre.  Mit Recherchen und einer eigenen Dokumentation zur Bedeutung black fashion wanderte unsere Arbeit sogar nach Berlin, auf was wir natürlich sehr stolz sind.'
         }]
     }, {
