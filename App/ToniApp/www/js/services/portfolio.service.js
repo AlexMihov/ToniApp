@@ -27,30 +27,30 @@ angular.module('ToniApp.services')
     }, {
         id: 1,
         creator_id: 3,
-        project_title: 'Luzerner Bier Redesign',
-        project_tags: 'Grafik',
-        picture: 'http://www.wineware.co.uk/content/images/thumbs/0010058_schott-zwiesel-beer-basic-small-beer-glasses-set-of-6.jpeg',
+        project_title: 'Innen/Aussen',
+        project_tags: 'Fotografie',
+        picture: 'img/portfolio/Picture/project_1.jpg',
         banner: {
             type: 'picture',
-            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+            url: 'img/portfolio/Picture/project_1.jpg'
         },
         paragraphs: [{
             title: '',
-            content: 'asdasdasd'
+            content: 'In einem Fotoprojekt in Vézelay Burgund arbeiteten wir während zwei Wochen an einem fotografischen Thema, welches mit Architektur zutun hatte. Innen und Aussenwelten flossen ineinander und liessen neue Räume entstehen.'
         }]
     }, {
         id: 2,
         creator_id: 2,
-        project_title: 'Jazz Konzert',
+        project_title: 'Austellung im Feuerwehrdepo in Rapperswil',
         project_tags: 'Musik, Jazz',
-        picture: 'http://www.audiophileusa.com/covers400water/23108.jpg',
+        picture: 'img/portfolio/Picture/project_2.jpg',
         banner: {
             type: 'picture',
-            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+            url: 'img/portfolio/Picture/project_2.jpg'
         },
         paragraphs: [{
             title: '',
-            content: 'asdasdasdasd',
+            content: 'Für meine Fotdokumentation „ Lichtstreifen“ fotografierte ich mit einer analogen Spiegelreflexkamera während einer Woche Innenräume. Ich experimentierte mit verschiedenen  Lichtquellen. Im Fotolabor entwickelte ich meine Bilder und vergrösserte sie auf Grossformat.',
             media: {
                 type: 'picture',
                 url: ''
@@ -59,16 +59,16 @@ angular.module('ToniApp.services')
     }, {
         id: 3,
         creator_id: 4,
-        project_title: 'Mode Kollektion',
+        project_title: 'Schwarz ist mehr als eine Farbe',
         project_tags: 'Konzept, Kleidung',
-        picture: 'http://fashionsup.com/wp-content/uploads/2012/05/how-to-draw-fashion-sketches.jpg',
+        picture: 'img/portfolio/Picture/project_3.jpg',
         banner: {
             type: 'picture',
-            url: 'http://d1oi7t5trwfj5d.cloudfront.net/fe/08/fbd7e11241fd977d6f83e2f3a675/homer.jpg'
+            url: 'img/portfolio/Picture/project_3.jpg'
         },
         paragraphs: [{
             title: '',
-            content: 'asdasdasdas'
+            content: 'In einem interdisziplinären Modul  in Stile und Design untesuchten Jan, Fabienne und ich die Bedeutung der Farbe „ Schwarz „ in der Mode der letzten 100 Jahre.  Mit Recherchen und einer eigenen Dokumentation zur Bedeutung black fashion wanderte unsere Arbeit sogar nach Berlin, auf was wir natürlich sehr stolz sind.'
         }]
     }, {
         id: 4,
