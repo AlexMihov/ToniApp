@@ -180,6 +180,9 @@ angular.module('ToniApp.controllers', [])
     var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
     $scope.currentPerson = Person.get($scope.marketEntry.creator_id);
+    $scope.getFirstName = function(fullName){
+        return fullName.split(' ')[0];
+    }
 
     $scope.gotoMessage = function() {
         $location.path('/tab/market/' + currentID + '/message');
