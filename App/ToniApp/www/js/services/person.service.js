@@ -5,6 +5,15 @@ angular.module('ToniApp.services')
 
     // Some fake testing data
     var person = [{
+        id: 0,
+        name: 'Alex Mihov',
+        department: 'DMU',
+        studies: 'Jazz & Pop',
+        semester: 4,
+        email: 'marco.frey@zhdk.ch',
+        interests: 'Jazz, Gitarre, Piano, Konzert',
+        phone: '+41 079 945 22 75'
+    }, {
         id: 1,
         name: 'Marco Frey',
         department: 'DMU',

@@ -7836,6 +7836,12 @@ p {
   color: white;
   border-radius: 5px 5px 5px 5px/5px 5px 5px 5px; }
 
+.marketShort {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 .bar-footer {
   overflow: visible !important; }
 

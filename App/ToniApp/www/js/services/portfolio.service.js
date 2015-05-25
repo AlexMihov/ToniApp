@@ -145,10 +145,7 @@ angular.module('ToniApp.services')
         },
         paragraphs: [{
             title: 'Paper Fashion',
-            content: 'In diesem Wochen Modul  in Stile und Design erlernten wir die verschiedensten Paierbearbeitungstechniken wie Wabetechnik, Knüllen, Schneiden, Falten... Wir machten Materialproben,
-gestalterische Experimente und entwickelten schlussendlich einen Prototypen. 
-Anhand von Schneiderpuppen wurden unsere Ideen
-konkret umgesetzt und in einem Fotoshooting abgerundet.',
+            content: 'In diesem Wochen Modul  in Stile und Design erlernten wir die verschiedensten Paierbearbeitungstechniken wie Wabetechnik, Knüllen, Schneiden, Falten... Wir machten Materialproben, gestalterische Experimente und entwickelten schlussendlich einen Prototypen. Anhand von Schneiderpuppen wurden unsere Ideen konkret umgesetzt und in einem Fotoshooting abgerundet.',
             media: {
                 type: 'picture',
                 url: 'img/portfolio/Pictures/project_8.jpg'
@@ -157,7 +154,7 @@ konkret umgesetzt und in einem Fotoshooting abgerundet.',
             title: '',
             content: ''
         }]
-            }, {
+    }, {
         id: 9,
         creator_id: 1,
         project_title: 'Kleider machen Musik',
@@ -178,215 +175,355 @@ konkret umgesetzt und in einem Fotoshooting abgerundet.',
             title: '',
             content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 8,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
         }]
-            }, {
-        id: 6,
-        creator_id: 1,
-        project_title: 'Bildlügen oder betrügerische Absichten',
-        project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
-            url: 'img/portfolio/Pictures/project_6.jpg'
+            url: 'img/portfolio/Pictures/project_9.jpg'
         },
         paragraphs: [{
-            title: 'Bildlügen oder betrügerische Absichten',
-            content: 'Beim Hausräumen von Andreas Grossmutter fanden wir Schachteln voll mit Postkarten der 20er 30er und 40er Jahre.  Wie inventarisierten, ordneten nach Kriterien analysierten und untersuchten manipuliertes Material hin zu neuen Bildaussagen.  ',
-            media: {
-                type: 'picture',
-                url: 'img/portfolio/Pictures/project_6.jpg'
-            }
-        }, {
-            title: 'Paragraph Nr2',
-            content: 'Dies ist nun ein zweiter, sehr wichtiger Abschnitt, da ich noch mehr testen muss. Ich will sehen, ob das Programm alle Paragraphen dynamisch anzeigt.'
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 7,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
+        }]
+    }, {
+        id: 9,
+        creator_id: 1,
+        project_title: '',
+        project_tags: '',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
+        banner: {
+            type: 'picture',
+            url: 'img/portfolio/Pictures/project_9.jpg'
+        },
+        paragraphs: [{
+            title: '',
+            content: ''
         }]
     }];
 
