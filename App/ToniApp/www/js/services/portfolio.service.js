@@ -82,7 +82,7 @@ angular.module('ToniApp.services')
         },
         paragraphs: [{
             title: 'Birds',
-            content: 'Für unseren Krimi-Kurzlfim „ birds“ , eine Anlehnung an Hitchkock ,drehten wir vor allem an den Ufern des Zürichsees. Das Krimidrama handelt von Janez, einem passlosen Slowenier, der von Halluzinationen geplagt immer wieder Dinge sah, die einmal Wirklichkeit waren. Sein zweites ich lebte in einer anderen Zeit.'
+            content: 'Für unseren Krimi-Kurzfilm „Birds“, eine Anlehnung an Hitchkock, drehten wir vor allem an den Ufern des Zürichsees. Das Krimidrama handelt von Janez, einem passlosen Slowenier, der von Halluzinationen geplagt immer wieder Dinge sah, die einmal Wirklichkeit waren. Sein zweites ich lebte in einer anderen Zeit.'
         }]
     }, {
         id: 5,
@@ -103,7 +103,7 @@ angular.module('ToniApp.services')
         creator_id: 1,
         project_title: 'Bildlügen oder betrügerische Absichten',
         project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+        picture: 'img/portfolio/Pictures/project_6.jpg',
         banner: {
             type: 'picture',
             url: 'img/portfolio/Pictures/project_6.jpg'
@@ -138,7 +138,7 @@ angular.module('ToniApp.services')
         creator_id: 1,
         project_title: 'Paper Fashion',
         project_tags: 'Mode, Papier, Fotoshooting',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+        picture: 'img/portfolio/Pictures/project_8.jpg',
         banner: {
             type: 'picture',
             url: 'img/portfolio/Pictures/project_8.jpg'
@@ -159,7 +159,7 @@ angular.module('ToniApp.services')
         creator_id: 1,
         project_title: 'Kleider machen Musik',
         project_tags: 'Analyse, Bild',
-        picture: 'http://2.bp.blogspot.com/-y8yEusAKcUM/TaoLBwfTQpI/AAAAAAAABAw/rHpOeL4OFMY/s1600/homer-simpson.png',
+        picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
             type: 'picture',
             url: 'img/portfolio/Pictures/project_9.jpg'
@@ -257,8 +257,7 @@ angular.module('ToniApp.services')
         },
         paragraphs: [{
             title: 'Concerto Lago',
-            content: 'Mit Nina und Valerie organisierte ich ein Open-Air Sommerkonzert am unteren Zürichsee. Zusammen mit Studierenden des Departements Klassik spielten wir Werke von F. M. Bartoly und A. Bruggner. 
-Am 01.06.2014 spielten wir im Kollegium Musicum ausgewählte Werke von Stravinski, Bergolesi und Rebell. '
+            content: 'Mit Nina und Valerie organisierte ich ein Open-Air Sommerkonzert am unteren Zürichsee. Zusammen mit Studierenden des Departements Klassik spielten wir Werke von F. M. Bartoly und A. Bruggner. Am 01.06.2014 spielten wir im Kollegium Musicum ausgewählte Werke von Stravinski, Bergolesi und Rebell. '
         }]
     }, {
         id: 16,
@@ -328,8 +327,7 @@ Am 01.06.2014 spielten wir im Kollegium Musicum ausgewählte Werke von Stravinsk
         },
         paragraphs: [{
             title: 'Istanbul Fever',
-            content: '5th international Ballet Invitation for dance and schools Istanbul .
-Aufführungen in Zusammenarbeit mit der Silbermedaillengewinnerin Misa Solowjowa.'
+            content: '5th international Ballet Invitation for dance and schools Istanbul. Aufführungen in Zusammenarbeit mit der Silbermedaillengewinnerin Misa Solowjowa.'
         }]
     }, {
         id: 21,
