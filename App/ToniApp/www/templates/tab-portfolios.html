@@ -13,56 +13,52 @@
         </div>
     </div>
     <ion-content ng-switch on="currentTab">
-        <label ng-hide="markCurrentTab('Filter')" class="item item-input searchbar">
-            <i class="icon ion-search placeholder-icon"></i>
-            <input type="text" placeholder="Suche" ng-model="searchText">
-        </label>
-        <ion-list>
-            <div class="row" ng-repeat="tripples in (portfolios.length/3 | PortfolioRows ) " ng-switch-when="Portfolios" ng-if="showGrid">
-                <div ng-repeat="portfolio in (portfolios | filter:searchText).slice(3*$index, 3*$index + 3)" class="col col-33">
-                	<a href="#/tab/portfolios/project/{{portfolio.id}}"><img ng-src="{{portfolio.picture}}" style="width:100%;"></a>
+        <div class="skip-nav-bar-margin">
+            <label ng-hide="markCurrentTab('Filter')" class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Suche" ng-model="searchText">
+            </label>
+            <ion-list>
+                <div class="row" ng-repeat="tripples in (portfolios.length/3 | PortfolioRows ) " ng-switch-when="Portfolios" ng-if="showGrid">
+                    <div ng-repeat="portfolio in (portfolios | filter:searchText).slice(3*$index, 3*$index + 3)" class="col col-33">
+                        <a href="#/tab/portfolios/project/{{portfolio.id}}"><img ng-src="{{portfolio.picture}}" style="width:100%;"></a>
+                    </div>
                 </div>
-            </div>
-            <ion-item class="item item-remove-animate item-thumbnail-left" ng-if="!showGrid" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/project/{{portfolio.id}}">
-                <img ng-src="{{portfolio.picture}}">
-                <h2>{{portfolio.project_title}}</h2>
-                <p>{{portfolio.project_tags}}</p>
-                <p>{{people[portfolio.creator_id].name}}</p>
-                <ion-option-button class="button-energized" ng-click="toggleFavorited(portfolio)">
-                    <i class="icon" ng-class="portfolio.favorited ? 'ion-ios-star' : 'ion-ios-star-outline'"></i>
-                </ion-option-button>
-            </ion-item>
-            <a class="item" ng-switch-when="Portfolios" ng-hide="(portfolios | filter:searchText).length">
-                <p>Keine Treffer</p>
-            </a>
-            <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'" href="#/tab/portfolios/{{person.id}}">
-                <img ng-src="img/user/user_{{person.id}}.jpg">
-                <h2>{{person.name}}</h2>
-                <p>{{person.studies}}</p>
-            </a>
-            <a class="item" ng-switch-when="Personen" ng-hide="(people | filter:searchText).length">
-                <p>Keine Treffer</p>
-            </a>
-
-            <ion-list ng-switch-when="Filter">
-            <h2 class="padding skip-nav-bar-margin">
-                Projekte anzeigen von:
-            </h2>
-            <div ng-repeat="filter in filters">
-                <ion-item class="item-stable item-icon-right neg-6px-margin" ng-click="toggleFilter(filter)" ng-class="{active: filter.active}">
-                    {{filter.name}} &nbsp; <i class="icon icon-accessory" ng-class="filter.active ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+                <ion-item class="item item-remove-animate item-thumbnail-left" ng-if="!showGrid" ng-switch-when="Portfolios" ng-repeat="portfolio in portfolios | filter:searchText" href="#/tab/portfolios/project/{{portfolio.id}}">
+                    <img ng-src="{{portfolio.picture}}">
+                    <h2>{{portfolio.project_title}}</h2>
+                    <p>{{portfolio.project_tags}}</p>
+                    <p>{{people[portfolio.creator_id].name}}</p>
+                    <ion-option-button class="button-energized" ng-click="toggleFavorited(portfolio)">
+                        <i class="icon" ng-class="portfolio.favorited ? 'ion-ios-star' : 'ion-ios-star-outline'"></i>
+                    </ion-option-button>
                 </ion-item>
-                <ion-item class="item-accordion padding-25px" ng-repeat="item in filter.items" ng-show="filter.active">
-                    {{item.name}}
-                    <label class="toggle toggle-positive">
-                        <input type="checkbox" checked>
-                        <div class="track">
-                            <div class="handle"></div>
-                        </div>
-                    </label>
-                </ion-item>
-            </div>
-        </ion-list>
-        </ion-list>
+                <a class="item" ng-switch-when="Portfolios" ng-hide="(portfolios | filter:searchText).length">
+                    <p>Keine Treffer</p>
+                </a>
+                <a class="item item-thumbnail-left" ng-switch-when="Personen" ng-repeat="person in people | filter:searchText | orderBy:'name'" href="#/tab/portfolios/{{person.id}}">
+                    <img ng-src="img/user/user_{{person.id}}.jpg">
+                    <h2>{{person.name}}</h2>
+                    <p>{{person.studies}}</p>
+                </a>
+                <a class="item" ng-switch-when="Personen" ng-hide="(people | filter:searchText).length">
+                    <p>Keine Treffer</p>
+                </a>
+                <ion-list ng-switch-when="Filter">
+                    <ion-item class="item item-icon-right neg-6px-margin" href="#/tab/portfolios/filter/1">
+                        <p class="bigger_p">Filtern nach Interessen</p>
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                    <ion-item class="item item-icon-right neg-6px-margin" href="#/tab/portfolios/filter/2">
+                        <p class="bigger_p">Filtern nach Vertiefungen</p>
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                    <ion-item class="item item-icon-right neg-6px-margin" href="#/tab/portfolios/filter/3">
+                        <p class="bigger_p">Filtern nach Zeitraum</p>
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </ion-item>
+                </ion-list>
+            </ion-list>
+        </div>
     </ion-content>
 </ion-view>

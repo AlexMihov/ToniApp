@@ -158,6 +158,15 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
                 }
             }
         })
+        .state('tab.portfolios-filter', {
+            url: '/portfolios/filter/:filterID',
+            views: {
+                'tab-portfolios': {
+                    templateUrl: 'templates/tab-portfolios-filter.html',
+                    controller: 'PortfolioFilterCtrl'
+                }
+            }
+        })
         .state('tab.portfolios-projectDetail', {
             url: '/portfolios/project/:portfolioId',
             views: {

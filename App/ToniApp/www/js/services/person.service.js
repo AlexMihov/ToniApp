@@ -12,7 +12,7 @@ angular.module('ToniApp.services')
         semester: 4,
         email: 'alex@mihov.ch',
         interests: 'Programmieren, Apps, Fotografie',
-        phone: '+41 079 945 22 75'
+        phone: '+41 079 612 02 84'
     }, {
         id: 1,
         name: 'Marco Frey',

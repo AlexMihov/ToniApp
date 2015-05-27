@@ -53,7 +53,6 @@ angular.module('ToniApp.controllers', [])
             from: new Date(),
             to: new Date()
         }
-        console.log($scope.currentFilter.items);
 
         $scope.resetFilter = function() {
             for (var i = 0; i < $scope.currentFilter.items.length; i++) {
@@ -180,6 +179,20 @@ angular.module('ToniApp.controllers', [])
         $scope.currentTab = tabName;
     }
 })
+
+.controller('PortfolioFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
+        $scope.currentID = $stateParams.filterID;
+        $scope.currentFilter = Filters.get($scope.currentID);
+        $scope.filterDates = {
+            from: new Date(),
+            to: new Date()
+        }
+        $scope.resetFilter = function() {
+            for (var i = 0; i < $scope.currentFilter.items.length; i++) {
+                $scope.currentFilter.items[i].active = true;
+            };
+        };
+    })
 
 .filter('PortfolioRows', function() {
         return function(arrayLength) {
