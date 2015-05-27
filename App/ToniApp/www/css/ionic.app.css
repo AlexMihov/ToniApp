@@ -7687,6 +7687,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
 .centered-button-75 {
   display: block;
   width: 75%;

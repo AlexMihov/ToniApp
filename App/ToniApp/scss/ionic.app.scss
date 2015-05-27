@@ -19,6 +19,15 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
 .centered-button-75 {
     display: block;
     width: 75%;
@@ -219,15 +228,6 @@ p {
     -ms-hyphens: auto;
     hyphens: auto;
 }
-
-
-
-
-
-
-
-
-
 
 //---- CHAT
 .bar-footer {
