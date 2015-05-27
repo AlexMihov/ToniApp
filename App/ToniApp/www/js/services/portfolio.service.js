@@ -8,6 +8,7 @@ angular.module('ToniApp.services')
         id: 0,
         creator_id: 7,
         project_title: 'Toni App',
+        favorited:false,
         project_tags: 'Design, App, Toni',
         picture: 'http://i.imgur.com/ADK9LpZ.jpg',
         banner: {
@@ -28,6 +29,7 @@ angular.module('ToniApp.services')
         id: 1,
         creator_id: 3,
         project_title: 'Innen/Aussen',
+        favorited:false,
         project_tags: 'Fotografie',
         picture: 'img/portfolio/Pictures/project_1.jpg',
         banner: {
@@ -42,6 +44,7 @@ angular.module('ToniApp.services')
         id: 2,
         creator_id: 2,
         project_title: 'Austellung im Feuerwehrdepo in Rapperswil',
+        favorited:false,
         project_tags: 'Musik, Jazz',
         picture: 'img/portfolio/Pictures/project_2.jpg',
         banner: {
@@ -60,6 +63,7 @@ angular.module('ToniApp.services')
         id: 3,
         creator_id: 4,
         project_title: 'Schwarz ist mehr als eine Farbe',
+        favorited:false,
         project_tags: 'Kleidung',
         picture: 'img/portfolio/Pictures/project_3.jpg',
         banner: {
@@ -74,6 +78,7 @@ angular.module('ToniApp.services')
         id: 4,
         creator_id: 5,
         project_title: 'Birds',
+        favorited:false,
         project_tags: 'Film',
         picture: 'img/portfolio/Pictures/project_4.jpg',
         banner: {
@@ -88,6 +93,7 @@ angular.module('ToniApp.services')
         id: 5,
         creator_id: 6,
         project_title: 'Schnipp Schnapp',
+        favorited:false,
         project_tags: 'Bild, Fotografie',
         picture: 'img/portfolio/Pictures/project_5.jpg',
         banner: {
@@ -102,6 +108,7 @@ angular.module('ToniApp.services')
         id: 6,
         creator_id: 1,
         project_title: 'Bildlügen oder betrügerische Absichten',
+        favorited:false,
         project_tags: 'Analyse, Bild',
         picture: 'img/portfolio/Pictures/project_6.jpg',
         banner: {
@@ -123,6 +130,7 @@ angular.module('ToniApp.services')
         id: 7,
         creator_id: 8,
         project_title: 'Vom Element zum System',
+        favorited:false,
         project_tags: 'Objekt, Körper',
         picture: 'img/portfolio/Pictures/project_7.jpg',
         banner: {
@@ -137,6 +145,7 @@ angular.module('ToniApp.services')
         id: 8,
         creator_id: 1,
         project_title: 'Paper Fashion',
+        favorited:false,
         project_tags: 'Mode, Papier, Fotoshooting',
         picture: 'img/portfolio/Pictures/project_8.jpg',
         banner: {
@@ -158,6 +167,7 @@ angular.module('ToniApp.services')
         id: 9,
         creator_id: 1,
         project_title: 'Kleider machen Musik',
+        favorited:false,
         project_tags: 'Analyse, Bild',
         picture: 'img/portfolio/Pictures/project_9.jpg',
         banner: {
@@ -179,6 +189,7 @@ angular.module('ToniApp.services')
         id: 10,
         creator_id: 8,
         project_title: 'Blickkontakte',
+        favorited:false,
         project_tags: 'Fotografie',
         picture: 'img/portfolio/Pictures/project_10.jpg',
         banner: {
@@ -193,6 +204,7 @@ angular.module('ToniApp.services')
         id: 11,
         creator_id: 7,
         project_title: 'Künstlerinterwiews',
+        favorited:false,
         project_tags: 'Interview, Video, Moderation',
         picture: 'img/portfolio/Pictures/project_11.jpg',
         banner: {
@@ -207,6 +219,7 @@ angular.module('ToniApp.services')
         id: 12,
         creator_id: 7,
         project_title: 'Natura Morta',
+        favorited:false,
         project_tags: 'Installation, Gesaltung',
         picture: 'img/portfolio/Pictures/project_12.jpg',
         banner: {
@@ -221,6 +234,7 @@ angular.module('ToniApp.services')
         id: 13,
         creator_id: 7,
         project_title: 'Projekt in der Casa D‘Aglieri in Rimini - „Film der 60iger Jahre“',
+        favorited:false,
         project_tags: 'Szenografie, Film',
         picture: 'img/portfolio/Pictures/project_13.jpg',
         banner: {
@@ -235,6 +249,7 @@ angular.module('ToniApp.services')
         id: 14,
         creator_id: 7,
         project_title: 'Schuhe heute - Schuhe gestern',
+        favorited:false,
         project_tags: 'Werbung, Mode, Dokumentation',
         picture: 'img/portfolio/Pictures/project_14.jpg',
         banner: {
@@ -249,6 +264,7 @@ angular.module('ToniApp.services')
         id: 15,
         creator_id: 7,
         project_title: 'Concerto Lago',
+        favorited:false,
         project_tags: 'Konzert, Klassik',
         picture: 'img/portfolio/Pictures/project_15.jpg',
         banner: {
@@ -263,6 +279,7 @@ angular.module('ToniApp.services')
         id: 16,
         creator_id: 7,
         project_title: 'Jubiliäumsabend',
+        favorited:false,
         project_tags: 'Kammermusik, Konzert',
         picture: 'img/portfolio/Pictures/project_16.jpg',
         banner: {
@@ -277,6 +294,7 @@ angular.module('ToniApp.services')
         id: 17,
         creator_id: 7,
         project_title: 'Christian Wolf',
+        favorited:false,
         project_tags: 'Komposition',
         picture: 'img/portfolio/Pictures/project_17.jpg',
         banner: {
@@ -291,6 +309,7 @@ angular.module('ToniApp.services')
         id: 18,
         creator_id: 7,
         project_title: 'Kinder machen Kunst',
+        favorited:false,
         project_tags: 'Kinder, Kunst',
         picture: 'img/portfolio/Pictures/project_18.jpg',
         banner: {
@@ -305,6 +324,7 @@ angular.module('ToniApp.services')
         id: 19,
         creator_id: 7,
         project_title: 'Cenacolo Arabesque',
+        favorited:false,
         project_tags: 'Konzert',
         picture: 'img/portfolio/Pictures/project_19.jpg',
         banner: {
@@ -319,6 +339,7 @@ angular.module('ToniApp.services')
         id: 20,
         creator_id: 7,
         project_title: 'Istanbul Fever',
+        favorited:false,
         project_tags: 'Ballet, Tanz',
         picture: 'img/portfolio/Pictures/project_20.jpg',
         banner: {
@@ -333,6 +354,7 @@ angular.module('ToniApp.services')
         id: 21,
         creator_id: 7,
         project_title: 'Mimi',
+        favorited:false,
         project_tags: 'Fotografie, Katze',
         picture: 'img/portfolio/Pictures/project_21.jpg',
         banner: {
@@ -347,6 +369,7 @@ angular.module('ToniApp.services')
         id: 22,
         creator_id: 7,
         project_title: 'Musée d‘ Orsay Paris',
+        favorited:false,
         project_tags: 'Museum, Reise',
         picture: 'img/portfolio/Pictures/project_22.jpg',
         banner: {
@@ -361,6 +384,7 @@ angular.module('ToniApp.services')
         id: 23,
         creator_id: 7,
         project_title: 'Artefacte',
+        favorited:false,
         project_tags: 'Ausstellung',
         picture: 'img/portfolio/Pictures/project_23.jpg',
         banner: {
@@ -375,6 +399,7 @@ angular.module('ToniApp.services')
         id: 24,
         creator_id: 1,
         project_title: 'Klassenreise Lofoten',
+        favorited:false,
         project_tags: 'Reise',
         picture: 'img/portfolio/Pictures/project_24.jpg',
         banner: {
@@ -389,6 +414,7 @@ angular.module('ToniApp.services')
         id: 25,
         creator_id: 1,
         project_title: 'Corner Brook',
+        favorited:false,
         project_tags: 'Fotografie',
         picture: 'img/portfolio/Pictures/project_25.jpg',
         banner: {
@@ -403,6 +429,7 @@ angular.module('ToniApp.services')
         id: 26,
         creator_id: 1,
         project_title: 'Red & Ronny',
+        favorited:false,
         project_tags: 'Animation',
         picture: 'img/portfolio/Pictures/project_26.jpg',
         banner: {
@@ -417,6 +444,7 @@ angular.module('ToniApp.services')
         id: 27,
         creator_id: 1,
         project_title: 'Urbanes Wohnen',
+        favorited:false,
         project_tags: 'Fotografie, Gallerie',
         picture: 'img/portfolio/Pictures/project_27.jpg',
         banner: {
@@ -431,6 +459,7 @@ angular.module('ToniApp.services')
         id: 28,
         creator_id: 1,
         project_title: 'Girls do fight',
+        favorited:false,
         project_tags: 'Werbung, Plakat',
         picture: 'img/portfolio/Pictures/project_28.jpg',
         banner: {
@@ -445,6 +474,7 @@ angular.module('ToniApp.services')
         id: 29,
         creator_id: 1,
         project_title: 'Insieme',
+        favorited:false,
         project_tags: 'Broschüre, Grafik',
         picture: 'img/portfolio/Pictures/project_29.jpg',
         banner: {
@@ -459,6 +489,7 @@ angular.module('ToniApp.services')
         id: 30,
         creator_id: 1,
         project_title: 'Lost Erik',
+        favorited:false,
         project_tags: 'Film',
         picture: 'img/portfolio/Pictures/project_30.jpg',
         banner: {
@@ -473,6 +504,7 @@ angular.module('ToniApp.services')
         id: 31,
         creator_id: 1,
         project_title: 'Die Geldmaschine',
+        favorited:false,
         project_tags: 'Theater. Aufführung',
         picture: 'img/portfolio/Pictures/project_31.jpg',
         banner: {
@@ -487,6 +519,7 @@ angular.module('ToniApp.services')
         id: 32,
         creator_id: 1,
         project_title: 'JUNK-ROBOTS',
+        favorited:false,
         project_tags: 'Industriedesign, Roboter',
         picture: 'img/portfolio/Pictures/project_32.jpg',
         banner: {
@@ -501,6 +534,7 @@ angular.module('ToniApp.services')
         id: 33,
         creator_id: 1,
         project_title: 'Zurich meets Florence',
+        favorited:false,
         project_tags: 'Musik',
         picture: 'img/portfolio/Pictures/project_33.jpg',
         banner: {
@@ -515,6 +549,7 @@ angular.module('ToniApp.services')
         id: 34,
         creator_id: 1,
         project_title: 'Geräuschefänger',
+        favorited:false,
         project_tags: 'Tonmeister, Sound',
         picture: 'img/portfolio/Pictures/project_34.jpg',
         banner: {
@@ -529,6 +564,7 @@ angular.module('ToniApp.services')
         id: 35,
         creator_id: 1,
         project_title: 'Barcelona Reise',
+        favorited:false,
         project_tags: 'Strassenkunst, Reise',
         picture: 'img/portfolio/Pictures/project_35.jpg',
         banner: {
@@ -543,6 +579,7 @@ angular.module('ToniApp.services')
         id: 36,
         creator_id: 1,
         project_title: 'Komposition und Arrangement',
+        favorited:false,
         project_tags: 'Jazz',
         picture: 'img/portfolio/Pictures/project_36.jpg',
         banner: {

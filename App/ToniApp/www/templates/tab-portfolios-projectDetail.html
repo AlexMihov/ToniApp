@@ -1,4 +1,9 @@
 <ion-view view-title="{{currentPortfolio.project_title}}">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-clear button-positive" ng-click="toggleFavorite()">
+            <i class="icon" ng-class="favorited ? 'ion-ios-star' : 'ion-ios-star-outline'"></i>
+        </button>
+    </ion-nav-buttons>
     <ion-content class="padding" overflow-scroll="true" ng-switch="currentPortfolio.banner.type">
         <img ng-switch-when="picture" class="portfolio-image" ng-src="{{currentPortfolio.banner.url}}">
         <iframe ng-switch-when="video" width="100%" height="185" ng-src="{{prepareUrlForIframe(currentPortfolio.banner.url)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

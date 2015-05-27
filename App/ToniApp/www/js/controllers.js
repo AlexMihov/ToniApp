@@ -129,6 +129,11 @@ angular.module('ToniApp.controllers', [])
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPortfolio = Portfolios.get(currentID);
     $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
+    $scope.favorited = $scope.currentPortfolio.favorited;
+
+    $scope.toggleFavorite = function() {
+        $scope.favorited = !$scope.favorited;
+    }
 
     $scope.prepareUrlForIframe = function(url) {
         return $sce.trustAsResourceUrl(url);
@@ -136,7 +141,7 @@ angular.module('ToniApp.controllers', [])
 
 })
 
-.controller('PortfolioCtrl', function($scope, Portfolios, Person, Filters) {
+.controller('PortfolioCtrl', function($scope, $log, Portfolios, Person, Filters) {
     $scope.portfolios = Portfolios.getAll();
     $scope.filters = Filters.getAll();
     $scope.people = Person.getAll();
@@ -161,6 +166,14 @@ angular.module('ToniApp.controllers', [])
         } else {
             return false;
         }
+    }
+    $scope.toggleFavorited = function(item){
+        for (var i = 0; i < $scope.portfolios.length; i++) {
+            if($scope.portfolios[i] == item){
+                $scope.portfolios[i].favorited =!$scope.portfolios[i].favorited;
+                return; 
+            }
+        };
     }
 
     $scope.setCurrentTab = function(tabName) {
