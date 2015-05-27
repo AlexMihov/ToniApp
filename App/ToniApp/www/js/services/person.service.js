@@ -7,11 +7,11 @@ angular.module('ToniApp.services')
     var person = [{
         id: 0,
         name: 'Alex Mihov',
-        department: 'DMU',
-        studies: 'Jazz & Pop',
+        department: 'IT',
+        studies: 'Informatik',
         semester: 4,
-        email: 'marco.frey@zhdk.ch',
-        interests: 'Jazz, Gitarre, Piano, Konzert',
+        email: 'alex@mihov.ch',
+        interests: 'Programmieren, Apps, Fotografie',
         phone: '+41 079 945 22 75'
     }, {
         id: 1,
