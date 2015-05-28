@@ -6,44 +6,72 @@ angular.module('ToniApp.services')
     // Some fake testing data
     var chats = [{
         id: 0,
-        name: 'Moris Freiburghaus',
-        lastText: 'Hey Mattias, wie gahts? Bruchsch du irgendwie irgendöppis',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 0,
+        conversation: [{
+            isSender: true,
+            text: 'S App isch ja huara geil! Wie hesch vor allem de Chat so geil herebracht?'
+        }, {
+            isSender: false,
+            text: 'Und was meinsch? Hani gueti Arbet gleistet?'
+        }, {
+            isSender: false,
+            text: 'Okay, werde denn bi de Tramhaltistell si!'
+        }, {
+            isSender: true,
+            text: 'Sicher wür mi sehr freue, wenn mer eus am Mittwuch mal im Toniareal treffe? Ich wür am 15.00 vorschlah.'
+        }, {
+            isSender: false,
+            text: 'Hoi Mattias! ich wür der gern helfe es App zmache'
+        }]
     }, {
         id: 1,
-        name: 'Max Lynx',
-        lastText: 'Hey, it\'s me',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 2,
+        conversation: [{
+            isSender: false,
+            text: 'Hey kannst du mir echt mit einem Design helfen?'
+        }]
     }, {
         id: 2,
-        name: 'Adam Bradleyson',
-        lastText: 'I should buy a boat',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 5,
+        conversation: [{
+            isSender: false,
+            text: 'hey! I saw your post in the market and would be very interested!'
+        }]
     }, {
         id: 3,
-        name: 'Perry Governor',
-        lastText: 'Look at my mukluks!',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 4,
+        conversation: [{
+            isSender: false,
+            text: 'Penis'
+        }]
     }, {
         id: 4,
-        name: 'Mike Harrington',
-        lastText: 'This is wicked good ice cream.',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 9,
+        conversation: [{
+            isSender: false,
+            text: 'haha :D that is awesome'
+        }]
     }, {
         id: 5,
-        name: 'Mike Harrington',
-        lastText: 'This is wicked good ice cream.',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 52,
+        conversation: [{
+            isSender: false,
+            text: 'hey!'
+        }]
     }, {
         id: 6,
-        name: 'Mike Harrington',
-        lastText: 'This is wicked good ice cream.',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 12,
+        conversation: [{
+            isSender: false,
+            text: 'hey!'
+        }]
     }, {
         id: 7,
-        name: 'Mike Harrington',
-        lastText: 'This is wicked good ice cream.',
-        face: 'https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11081316_10153128802383326_7628699609983322860_n.jpg?oh=60d2823edb8d0ae07395bd3b285ec3d2&oe=55D821B7&__gda__=1439452229_4e9daf55884ede1a60945abb18064bdd'
+        chatFrom: 39,
+        conversation: [{
+            isSender: false,
+            text: 'hey!'
+        }]
     }];
 
     return {

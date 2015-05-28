@@ -1,32 +1,21 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
-<ion-view view-title="{{toUser.username}}">
-    <div class="loader-center" ng-if="!doneLoading">
-        <div class="loader">
-            <i class="icon ion-loading-c"></i>
-        </div>
-    </div>
-    <ion-content has-bouncing="true" class="has-header has-footer" delegate-handle="userMessageScroll">
-        <div ng-repeat="message in messages" class="message-wrapper" on-hold="onMessageHold($event, $index, message)">
-            <div ng-if="user._id !== message.userId">
-                <img ng-click="viewProfile(message)" class="profile-pic left" ng-src="{{toUser.pic}}" onerror="onProfilePicError(this)" />
-                <div class="chat-bubble left">
-                    <div class="message" ng-bind-html="message.text">
+<ion-view view-title="{{friend.name}}">
+    <ion-content has-bouncing="true" class="has-header has-footer">
+        <div ng-repeat="message in chat.conversation.slice().reverse()" class="message-wrapper">
+            <div ng-if="message.isSender" >
+                <div class="bubble-right" id="{{'anchor' + $index}}">
+                    <div class="message white" style="margin:10px; " ng-bind-html="message.text">
                     </div>
                 </div>
+                <img class="chatPicture right" ng-src="{{'img/user/user_' + currentPerson.id + '.jpg'}}">
             </div>
-            <div ng-if="user._id === message.userId">
-                <img ng-click="viewProfile(message)" class="profile-pic right" ng-src="{{user.pic}}" onerror="onProfilePicError(this)" />
-                <div class="chat-bubble right">
-                    <div class="message" ng-bind-html="message.text">
+            <div ng-if="!message.isSender" style="clear:both;">
+                <div class="bubble-left" id="{{'anchor' + $index}}">
+                    <div class="message black" style="margin:10px;" ng-bind-html="message.text">
                     </div>
                 </div>
+                <img class="chatPicture left" ng-src="{{'img/user/user_' + friend.id + '.jpg'}}">
             </div>
-            <div class="cf"></div>
+            
         </div>
     </ion-content>
     <form name="sendMessageForm" ng-submit="sendMessage(sendMessageForm)" novalidate>
