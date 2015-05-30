@@ -1,16 +1,16 @@
 <ion-view view-title="{{friend.name}}">
     <ion-content has-bouncing="true" class="has-header has-footer">
         <div ng-repeat="message in chat.conversation.slice().reverse()" class="message-wrapper">
-            <div ng-if="message.isSender" >
+            <div ng-if="message.isSender" class="message_container">
                 <div class="bubble-right" id="{{'anchor' + $index}}">
-                    <div class="message white" style="margin:10px; " ng-bind-html="message.text">
+                    <div class="message white" ng-bind-html="message.text">
                     </div>
                 </div>
                 <img class="chatPicture right" ng-src="{{'img/user/user_' + currentPerson.id + '.jpg'}}">
             </div>
-            <div ng-if="!message.isSender" style="clear:both;">
+            <div ng-if="!message.isSender" class="message_container">
                 <div class="bubble-left" id="{{'anchor' + $index}}">
-                    <div class="message black" style="margin:10px;" ng-bind-html="message.text">
+                    <div class="message black" ng-bind-html="message.text">
                     </div>
                 </div>
                 <img class="chatPicture left" ng-src="{{'img/user/user_' + friend.id + '.jpg'}}">

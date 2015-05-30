@@ -12,8 +12,8 @@
             <div class="1px-divider" style="height:1px;"></div>
             <h4>Erstellt von</h4>
             <div class="list">
-                <a class="item item-thumbnail-left" href="#">
-                    <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg">
+                <a class="item item-thumbnail-left" ng-click="redirectToProfile(currentPerson.id)">
+                    <img ng-src="img/user/user_{{currentPerson.id}}.jpg">
                     <h2>{{currentPerson.name}}</h2>
                     <p>{{currentPerson.studies}}</p>
                     <p>{{currentPerson.email}}</p>

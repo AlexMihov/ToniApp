@@ -11,7 +11,7 @@ angular.module('ToniApp.controllers', [])
         $scope.filterDates = {
             from: new Date(),
             to: new Date()
-        }
+        };
         $scope.resetFields = function() {
             $scope.newEntry = {
                 from: new Date(),
@@ -19,7 +19,7 @@ angular.module('ToniApp.controllers', [])
                 url: ''
             };
             $ionicScrollDelegate.scrollTop();
-        }
+        };
 
         $scope.displayFilter = function(show) {
             if (show) {
@@ -27,7 +27,7 @@ angular.module('ToniApp.controllers', [])
             } else if (!show) {
                 $scope.showFilters = false;
             }
-        }
+        };
 
         $scope.toggleFilter = function(filter) {
             filter.active = !filter.active;
@@ -39,12 +39,12 @@ angular.module('ToniApp.controllers', [])
 
         $scope.gotoCreateNew = function() {
             $location.path('/tab/market/new');
-        }
+        };
         $scope.handleTopButton = function() {
             if (!$scope.showFilters) {
                 $scope.gotoCreateNew();
             } else {}
-        }
+        };
     })
     .controller('MarketFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
         $scope.currentID = $stateParams.filterID;
@@ -52,12 +52,12 @@ angular.module('ToniApp.controllers', [])
         $scope.filterDates = {
             from: new Date(),
             to: new Date()
-        }
+        };
 
         $scope.resetFilter = function() {
             for (var i = 0; i < $scope.currentFilter.items.length; i++) {
                 $scope.currentFilter.items[i].active = true;
-            };
+            }
         };
     })
 
@@ -67,44 +67,45 @@ angular.module('ToniApp.controllers', [])
     $scope.view_expanded = false;
     $scope.portfolios = Portfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
+    $scope.copyOfPerson = angular.copy($scope.currentPerson);
     $scope.newEntry = {
         url: ''
     };
     $scope.resetFields = function() {
         $scope.newEntry = {
             url: ''
-        }
-    }
+        };
+    };
 
 
     $scope.expandCard = function() {
         $scope.view_expanded = !$scope.view_expanded;
-    }
+    };
 
     $scope.setCurrentTab = function(tabName) {
         $scope.currentTab = tabName;
-    }
+    };
     $scope.displayFilter = function(show) {
         if (show) {
             $scope.showFilters = true;
         } else if (!show) {
             $scope.showFilters = false;
         }
-    }
+    };
     $scope.handleTopButton = function() {
         $location.path('/tab/account/new');
-    }
+    };
 
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
-    }
+    };
     $scope.markCurrentTab = function(tabName) {
         if ($scope.currentTab === tabName) {
             return true;
         } else {
             return false;
-        };
-    }
+        }
+    };
 })
 
 .controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
@@ -115,11 +116,11 @@ angular.module('ToniApp.controllers', [])
 
     $scope.expandCard = function() {
         $scope.view_expanded = !$scope.view_expanded;
-    }
+    };
 
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
-    }
+    };
 
 })
 
@@ -132,11 +133,11 @@ angular.module('ToniApp.controllers', [])
 
     $scope.toggleFavorite = function() {
         $scope.favorited = !$scope.favorited;
-    }
+    };
 
     $scope.prepareUrlForIframe = function(url) {
         return $sce.trustAsResourceUrl(url);
-    }
+    };
 
 })
 
@@ -157,7 +158,7 @@ angular.module('ToniApp.controllers', [])
 
     $scope.handleTopButton = function() {
         $scope.showGrid = !$scope.showGrid;
-    }
+    };
 
     $scope.markCurrentTab = function(tabName) {
         if (tabName === $scope.currentTab) {
@@ -166,11 +167,11 @@ angular.module('ToniApp.controllers', [])
             return false;
         }
     };
-    $scope.toggleFavorited = function(item){
+    $scope.toggleFavorited = function(item) {
         for (var i = 0; i < $scope.portfolios.length; i++) {
-            if($scope.portfolios[i] == item){
-                $scope.portfolios[i].favorited =!$scope.portfolios[i].favorited;
-                return; 
+            if ($scope.portfolios[i] == item) {
+                $scope.portfolios[i].favorited = !$scope.portfolios[i].favorited;
+                return;
             }
         }
     };
@@ -181,18 +182,18 @@ angular.module('ToniApp.controllers', [])
 })
 
 .controller('PortfolioFilterCtrl', function($scope, $location, $state, $stateParams, MarketEntries, Filters) {
-        $scope.currentID = $stateParams.filterID;
-        $scope.currentFilter = Filters.get($scope.currentID);
-        $scope.filterDates = {
-            from: new Date(),
-            to: new Date()
+    $scope.currentID = $stateParams.filterID;
+    $scope.currentFilter = Filters.get($scope.currentID);
+    $scope.filterDates = {
+        from: new Date(),
+        to: new Date()
+    };
+    $scope.resetFilter = function() {
+        for (var i = 0; i < $scope.currentFilter.items.length; i++) {
+            $scope.currentFilter.items[i].active = true;
         }
-        $scope.resetFilter = function() {
-            for (var i = 0; i < $scope.currentFilter.items.length; i++) {
-                $scope.currentFilter.items[i].active = true;
-            };
-        };
-    })
+    };
+})
 
 .filter('PortfolioRows', function() {
         return function(arrayLength) {
@@ -225,36 +226,38 @@ angular.module('ToniApp.controllers', [])
     })
 
 
-.controller('MarketDetailCtrl', function($scope, $location, $stateParams, MarketEntries, Person) {
+.controller('MarketDetailCtrl', function($scope, $state, $location, $stateParams, $ionicHistory, MarketEntries, Person) {
     var currentID = $stateParams.marketEntryID;
     $scope.marketEntry = MarketEntries.get(currentID);
     $scope.currentPerson = Person.get($scope.marketEntry.creator_id);
 
-    $scope.randomColor = function(){
-        var color = '#'+Math.floor(Math.random()*16777215).toString(16);
-        return color;
-    }
+    $scope.redirectToProfile = function(portfolioId) {
+        $state.go('tab.portfolios-detail', {
+            portfolioId: portfolioId
+        });
+    };
+
     $scope.getFirstName = function(fullName) {
         return fullName.split(' ')[0];
-    }
+    };
 
     $scope.gotoMessage = function() {
         $location.path('/tab/market/' + currentID + '/message');
-    }
+    };
     $scope.remove = function(chat) {
         Chats.remove(chat);
-    }
+    };
 })
 
 .controller('ChatsCtrl', function($scope, Chats, Person) {
     $scope.chats = Chats.all();
 
-    $scope.getPersonForChat = function(personID){
+    $scope.getPersonForChat = function(personID) {
         return Person.get(personID);
-    }
+    };
     $scope.remove = function(chat) {
         Chats.remove(chat);
-    }
+    };
 })
 
 

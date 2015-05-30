@@ -13,7 +13,22 @@ angular.module('ToniApp.services')
         }, {
             isSender: false,
             text: 'Und was meinsch? Hani gueti Arbet gleistet?'
+        },{
+            isSender: false,
+            text: 'super, merci'
+        },{
+            isSender: true,
+            text: 'Ich chume abe und hold di ab!'
+        },{
+            isSender: false,
+            text: 'Ah ja, chans gseh, aber ich gsehn dini Schuel echt ned'
+        },{
+            isSender: true,
+            text: 'Ou denn bisch uf der falscha Sieta; Gsehsch sona Gass? Musch die füra laufe!'
         }, {
+            isSender: false,
+            text: 'Hey ich bin bi de Haltistell vom 17er'
+        },{
             isSender: false,
             text: 'Okay, werde denn bi de Tramhaltistell si!'
         }, {

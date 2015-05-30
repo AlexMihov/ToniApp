@@ -229,15 +229,18 @@ p {
     hyphens: auto;
 }
 
+.16px-spacer{
+    display: block;
+    height: 50px;
+}
+
 //CHAT
 .bubble-right {
     position: relative;
-    float: right;
     margin-right: 80px;
     margin-left: 10px;
-    //margin-bottom: 20px;
-    //max-width: 60%;
-    padding: 0px;
+    padding: 1px;
+    min-height: 30px;
     background: #158ffe;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -260,12 +263,10 @@ p {
 
 .bubble-left {
     position: relative;
-    float: left;
     margin-left: 80px;
     margin-right: 10px;
-    //margin-bottom: 20px;
-    //max-width: 60%;
-    padding: 0px;
+    min-height: 30px;
+    padding: 1px;
     background: #dddddd;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -289,6 +290,8 @@ p {
 .message {
     font-family: "areal_blbook";
     padding: 0px 5px;
+    margin:10px;
+
     &.white {
         color: white;
     }
@@ -297,17 +300,19 @@ p {
     }
 }
 
+.message_container {
+    margin-bottom: -30px;
+}
+
 .chatPicture {
     width: 40px;
     border-radius: 50%;
     position: relative;
-    
-    &.left{
+    &.left {
         left: 10px;
         top: -40px;
     }
-
-    &.right{
+    &.right {
         right: -270px;
         top: -40px;
     }

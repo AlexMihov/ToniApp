@@ -41,42 +41,44 @@
                     <div class="col centered" ng-click="notImplemented()"><i class="icon portfolio-social ion-social-vimeo"></i></div>
                 </div>
             </div>
-            <hr style="margin:-10px 20px;">
-            <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
-            <div class="list">
-                <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/portfolios/project/{{portfolio.id}}">
-                    <img ng-src="{{portfolio.picture}}">
-                    <h2>{{portfolio.project_title}}</h2>
-                    <p>{{portfolio.project_tags}}</p>
-                    <p>{{currentPerson.name}}</p>
-                </a>
+            <div ng-hide = "view_expanded">
+                <hr style="margin:-10px 20px;">
+                <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
+                <div class="list">
+                    <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/portfolios/project/{{portfolio.id}}">
+                        <img ng-src="{{portfolio.picture}}">
+                        <h2>{{portfolio.project_title}}</h2>
+                        <p>{{portfolio.project_tags}}</p>
+                        <p>{{currentPerson.name}}</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="skip-nav-bar-margin" ng-switch-when="edit">
             <div class="list">
-                <img id="portrait" ng-src="img/user/user_{{currentPerson.id}}.jpg">
+                <img id="portrait" ng-src="img/user/user_{{copyOfPerson.id}}.jpg">
                 <a class="item item-icon-left" href="#">
                     <i class="icon ion-person detail_icon"></i>
                     <label class="item item-input">
-                        <input type="text" ng-model="currentPerson.name">
+                        <input type="text" ng-model="copyOfPerson.name">
                     </label>
                 </a>
                 <a class="item item-icon-left" href="#">
                     <i class="icon ion-email detail_icon"></i>
                     <label class="item item-input">
-                        <input type="text" ng-model="currentPerson.email">
+                        <input type="text" ng-model="copyOfPerson.email">
                     </label>
                 </a>
                 <a class="item item-icon-left" href="#">
                     <i class="icon ion-flash detail_icon"></i>
                     <label class="item item-input">
-                        <input type="text" ng-model="currentPerson.studies">
+                        <input type="text" ng-model="copyOfPerson.studies">
                     </label>
                 </a>
                 <a class="item item-icon-left item-text-wrap" href="#">
                     <i class="icon ion-eye detail_icon "></i>
                     <label class="item item-input">
-                        <input type="text" ng-model="currentPerson.interests">
+                        <input type="text" ng-model="copyOfPerson.interests">
                     </label>
                 </a>
                 <a class="item item-icon-left" href="#">
@@ -110,7 +112,6 @@
                     </label>
                 </a>
                 <div style="padding-top:10px"></div>
-                
             </div>
         </div>
     </ion-content>
