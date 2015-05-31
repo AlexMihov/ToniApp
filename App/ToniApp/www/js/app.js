@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
+angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services', 'ToniApp.libs'])
 
 .run(function($ionicPlatform, $rootScope, $ionicPopup) {
     $ionicPlatform.ready(function() {

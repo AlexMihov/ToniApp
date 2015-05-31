@@ -1,0 +1,1 @@
+angular.module('ToniApp.libs', ['angular-carousel', 'ngTouch']);
