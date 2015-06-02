@@ -7,12 +7,12 @@ angular.module('ToniApp.services')
             id: 0,
             title: 'Schauspieler gesucht',
             content_long: 'Für meinen Kurzfilm "Der toxische Morgen" suche ich unbedingt noch einen Schauspieler für die Rolle eines Jägers. Schaupielerfahrung wär erwünscht, Alter bevorzugt zwischen 30-40, männlich',
-            tags: ['Video', 'Film', 'ViTanzdeo', 'FTanzilm'],
+            tags: ['Video', 'Film'],
             timespan: '3 Drehtage, voraussichtlich Mitte Mai',
             creator_id: 1
         }, {
             id: 1,
-            title: 'Tänzer für Tanzshow BLUBLA',
+            title: 'Tänzer für Tanzshow YIKYAK',
             content_long: 'Hast du Freude an Popmusik und du tanzt gerne? Für unsere Performance brauchen wir noch zwei männliche Tänzer, welche sehr gut breakdancen können. Sie werden im Hitergrund der Vorstellung für den zusätzliche WOW-Effekt sorgen und einige sehr komplizierte Moves ausführen müssen.',
             tags: ['Tanz'],
             timespan: 'Jedes Wochenende im Juni, 2015',
@@ -42,7 +42,6 @@ angular.module('ToniApp.services')
 
         return {
             getAll: function() {
-                console.log('getting the Market entries', marketEntries);
                 return marketEntries;
             },
             remove: function(marketEntry) {

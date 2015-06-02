@@ -45,7 +45,7 @@
                 <hr style="margin:-10px 20px;">
                 <h3 class="centered">Portfolio von {{getFirstName(currentPerson.name)}}</h3>
                 <div class="list">
-                    <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/portfolios/project/{{portfolio.id}}">
+                    <a class="item item-thumbnail-left" ng-repeat="portfolio in portfolios | filter:{creator_id:currentPerson.id}" href="#/tab/account/project/{{portfolio.id}}">
                         <img ng-src="{{portfolio.picture}}">
                         <h2>{{portfolio.project_title}}</h2>
                         <p>{{portfolio.project_tags}}</p>

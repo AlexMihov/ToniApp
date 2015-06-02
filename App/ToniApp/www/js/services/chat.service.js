@@ -57,7 +57,7 @@ angular.module('ToniApp.services')
         chatFrom: 4,
         conversation: [{
             isSender: false,
-            text: 'Penis'
+            text: 'Hey can you give me the sourcecode for your app? I would really like to collaborate in it!'
         }]
     }, {
         id: 4,
@@ -105,4 +105,4 @@ angular.module('ToniApp.services')
             return null;
         }
     };
-})
+});

@@ -61,11 +61,11 @@ angular.module('ToniApp.controllers', [])
         };
     })
 
-.controller('AccountCtrl', function($scope, $location, Portfolios, Person) {
+.controller('AccountCtrl', function($scope, $location, AccountPortfolios, Person) {
     $scope.currentTab = 'preview';
     var currentID = 7;
     $scope.view_expanded = false;
-    $scope.portfolios = Portfolios.getAll();
+    $scope.portfolios = AccountPortfolios.getAll();
     $scope.currentPerson = Person.get(currentID);
     $scope.copyOfPerson = angular.copy($scope.currentPerson);
     $scope.newEntry = {
@@ -107,7 +107,22 @@ angular.module('ToniApp.controllers', [])
         }
     };
 })
+.controller('AccountPortfolioCtrl', function($scope, $location, $stateParams, $sce, AccountPortfolios, Person) {
+    var currentID = $stateParams.portfolioId;
+    $scope.portfolios = AccountPortfolios.getAll();
+    $scope.currentPortfolio = AccountPortfolios.get(currentID);
+    $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
+    $scope.favorited = $scope.currentPortfolio.favorited;
 
+    $scope.toggleFavorite = function() {
+        $scope.favorited = !$scope.favorited;
+    };
+
+    $scope.prepareUrlForIframe = function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+
+})
 .controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
     var currentID = $stateParams.portfolioId;
     $scope.portfolios = Portfolios.getAll();

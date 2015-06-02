@@ -131,6 +131,16 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
                 }
             }
         })
+    .state('tab.account-portfolio', {
+            url: '/account/project/:portfolioId',
+            views: {
+                'tab-account': {
+                    templateUrl: 'templates/tab-portfolios-projectDetail.html',
+                    controller: 'AccountPortfolioCtrl'
+                }
+            }
+        })
+
         .state('tab.account-portfolio-new', {
             url: '/account/new',
             views: {

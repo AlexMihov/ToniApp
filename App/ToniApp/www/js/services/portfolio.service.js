@@ -5,64 +5,6 @@ angular.module('ToniApp.services')
 
     // Some fake testing data
     var portfolios = [{
-        id: 0,
-        creator_id: 7,
-        project_title: 'Toni App',
-        favorited:false,
-        project_tags: 'Design, App, Toni',
-        picture: 'http://i.imgur.com/ADK9LpZ.jpg',
-        banner: [{
-                    type: 'picture',
-                    url: 'http://i.imgur.com/ADK9LpZ.jpg'
-                },{
-                    type: 'picture',
-                    url: 'https://www.zhdk.ch/uploads/tx_zhdkpagehead/Z_LOGO-kl.jpg'
-                }],
-        paragraphs: [{
-            title: '',
-            content: 'Während meiner Studienzeit hat mir ein App, welches den Studienalltag am ToniAreal vereinfacht täglich gefehlt. Aus diesem Grund habe ich mir vorgenommen, als meine Bachelorarbeit das Design für ebendieses App zu entwerfen.'
-        }, {
-            title: 'Design',
-            content: 'In vielen Iterationen habe ich ein initiales Design entworfen, welches meinen die verschiedenen Funktionen der zukünftigen ToniApp darstellen. Dieses wurde danach auf iPhone-grossen Kärtchen gedruckt und in meinen Befragungen verwendet.            Die Befragten mussten dabei die Karten in die Hand nehmen und die "App" bedienen als wäre es ein echtes Handy.'
-        }, {
-            title: 'Prototyp',
-            content: 'Nach dem Testen mit den Kartonkärtchen wollte ich noch eine bessere Vorstellung erhalten, wie ein fertiges App funktionieren könnte. Daher habe ich mich nach einer Person umgesehen, welche über das nötige Know-How verfügt. Auf diese Weise habe ich Alex Mihov, einen Informatikstudent der ZHAW kennen gelernt und wir haben zusammen die App auf die Beine gestellt.'
-        }]
-    }, {
-        id: 1,
-        creator_id: 3,
-        project_title: 'Innen/Aussen',
-        favorited:false,
-        project_tags: 'Fotografie',
-        picture: 'img/portfolio/Pictures/project_1.jpg',
-        banner: [{
-                    type: 'picture',
-                    url: 'img/portfolio/Pictures/project_1.jpg'
-                }],
-        paragraphs: [{
-            title: '',
-            content: 'In einem Fotoprojekt in Vézelay Burgund arbeiteten wir während zwei Wochen an einem fotografischen Thema, welches mit Architektur zutun hatte. Innen und Aussenwelten flossen ineinander und liessen neue Räume entstehen.'
-        }]
-    }, {
-        id: 2,
-        creator_id: 2,
-        project_title: 'Austellung im Feuerwehrdepo in Rapperswil',
-        favorited:false,
-        project_tags: 'Musik, Jazz',
-        picture: 'img/portfolio/Pictures/project_2.jpg',
-        banner: [{
-                    type: 'picture',
-                    url: 'img/portfolio/Pictures/project_2.jpg'
-                }],
-        paragraphs: [{
-            title: '',
-            content: 'Für meine Fotodokumentation „Lichtstreifen“ fotografierte ich mit einer analogen Spiegelreflexkamera während einer Woche Innenräume. Ich experimentierte mit verschiedenen  Lichtquellen. Im Fotolabor entwickelte ich meine Bilder und vergrösserte sie auf Grossformat.',
-            media: {
-                type: 'picture',
-                url: ''
-            }
-        }]
-    }, {
         id: 3,
         creator_id: 4,
         project_title: 'Schwarz ist mehr als eine Farbe',

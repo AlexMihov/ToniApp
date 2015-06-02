@@ -6,8 +6,9 @@
     </ion-nav-buttons>
     <ion-content class="padding" overflow-scroll="true" ng-switch="currentPortfolio.banner.type">
         <ion-slide-box>
-            <ion-slide ng-repeat="picture in currentPortfolio.banner">
-                <img class="portfolio-image" ng-src="{{picture.url}}">
+            <ion-slide ng-repeat="picture in currentPortfolio.banner" ng-switch on="picture.type">
+                <img ng-switch-when="picture" class="portfolio-image" ng-src="{{picture.url}}">
+                 <iframe ng-switch-when="video" width="100%" height="185" src="https://www.youtube.com/embed/1rz8rXfnPWA" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </ion-slide>
         </ion-slide-box>
         
@@ -19,7 +20,7 @@
                 {{paragraph.content}}
             </p>
         </div>
-        <div class="list">
+        <div class="list" ng-if="currentPerson.id != 7">
             <h2>Erstellt von</h2>
             <a class="item item-thumbnail-left" href="#/tab/portfolios/{{currentPerson.id}}">
                 <img ng-src="img/user/user_{{currentPerson.id}}.jpg">
