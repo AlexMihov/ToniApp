@@ -284,5 +284,5 @@ angular.module('ToniApp.controllers', [])
     var scrollToBot = function() {
         $ionicScrollDelegate.scrollBottom(true);
     };
-    $timeout(scrollToBot, 0);
+    $timeout(scrollToBot, 500);
 });
