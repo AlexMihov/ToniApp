@@ -1,6 +1,6 @@
 <ion-view view-title="{{currentPortfolio.project_title}}">
     <ion-nav-buttons side="secondary">
-        <button class="button button-clear button-positive" ng-click="toggleFavorite()">
+        <button ng-if="currentPerson.id != 7" class="button button-clear button-positive" ng-click="toggleFavorite()">
             <i class="icon" ng-class="favorited ? 'ion-ios-star' : 'ion-ios-star-outline'"></i>
         </button>
     </ion-nav-buttons>
