@@ -40,8 +40,20 @@ angular.module('ToniApp.services')
         }]
     }, {
         id: 1,
-        chatFrom: 2,
+        chatFrom: 14,
         conversation: [{
+            isSender: true,
+            text: 'Schreib doch in den Marktplatz! Dort findest du sicher jemanden.'
+        },{
+            isSender: true,
+            text: 'Leider habe ich momentan keine Zeit, da ich mit meiner eigenen Arbeit sehr beschäftigt bin.'
+        },{
+            isSender: true,
+            text: 'Hey!'
+        },{
+            isSender: false,
+            text: 'Ich brauche für meine Bachelorarbeit unbedingt ein Logo, welches ich für mein Game verwenden will.'
+        },{
             isSender: false,
             text: 'Hey kannst du mir echt mit einem Design helfen?'
         }]
@@ -57,33 +69,49 @@ angular.module('ToniApp.services')
         chatFrom: 4,
         conversation: [{
             isSender: false,
+            text: 'thanks mate!'
+        },{
+            isSender: true,
+            text: 'I will tell him that you asked me so that he will give you the access without a problem'
+        },{
+            isSender: true,
+            text: 'You can ask Alex Mihov, he has the ownership of the Github repo'
+        },{
+            isSender: false,
             text: 'Hey can you give me the sourcecode for your app? I would really like to collaborate in it!'
         }]
     }, {
         id: 4,
         chatFrom: 9,
         conversation: [{
+            isSender: true,
+            text: 'What do you think about the camera angles?'
+        },{
+            isSender: true,
+            text: 'I see you found my video :)'
+        },{
             isSender: false,
-            text: 'haha :D that is awesome'
+            text: 'haha :D that is awesome <a href="https://www.youtube.com/watch?v=1rz8rXfnPWA">https://www.youtube.com/watch?v=1rz8rXfnPWA</a>'
         }]
     }, {
         id: 5,
         chatFrom: 52,
         conversation: [{
+            isSender: true,
+            text: 'Het mer echt freud gmacht eu z helfe! findi e super sach, dass ihr das dureziend!'
+        },{
+            isSender: true,
+            text: 'Bitte bitte!'
+        },{
             isSender: false,
-            text: 'hey!'
-        }]
-    }, {
-        id: 6,
-        chatFrom: 12,
-        conversation: [{
+            text: 'Bisch e grossi hilf gsi :)'
+        },{
             isSender: false,
-            text: 'hey!'
-        }]
-    }, {
-        id: 7,
-        chatFrom: 39,
-        conversation: [{
+            text: 'ohni dich hets sicherlich ned glanget vo de Ziet!'
+        },{
+            isSender: false,
+            text: 'Messi viel mal für dini Hilf bi eusem Projekt!'
+        },{
             isSender: false,
             text: 'hey!'
         }]
