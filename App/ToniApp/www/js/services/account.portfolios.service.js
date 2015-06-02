@@ -12,8 +12,8 @@ angular.module('ToniApp.services')
         project_tags: 'Design, Konzept, Film',
         picture: 'img/portfolio/Pictures/Marktplatz_Projekt_logo.png',
         banner: [{
-                    type: 'picture',
-                    url: 'img/portfolio/Pictures/Marktplatz_Projekt_logo.png'
+                    type: 'video',
+                    url: 'https://www.youtube.com/embed/1rz8rXfnPWA'
                 }],
         paragraphs: [{
             title: 'Martkplatz ToniApp',
