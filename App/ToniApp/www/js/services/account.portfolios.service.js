@@ -45,7 +45,7 @@ angular.module('ToniApp.services')
         creator_id: 7,
         project_title: 'Austellung im Feuerwehrdepo in Rapperswil',
         favorited:false,
-        project_tags: 'Musik, Jazz',
+        project_tags: 'Fotografie, Dokumentation',
         picture: 'img/portfolio/Pictures/project_2.jpg',
         banner: [{
                     type: 'picture',

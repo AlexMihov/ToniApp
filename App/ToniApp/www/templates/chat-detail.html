@@ -15,18 +15,15 @@
                 </div>
                 <img class="chatPicture left" ng-src="{{'img/user/user_' + friend.id + '.jpg'}}">
             </div>
-            
         </div>
     </ion-content>
-    <form name="sendMessageForm" ng-submit="sendMessage(sendMessageForm)" novalidate>
-        <ion-footer-bar class="bar-stable item-input-inset message-footer">
-            <label class="item-input-wrapper">
-                <textarea id="inputField" ng-model="input.message" value="" placeholder="Nachricht" required minlength="1" maxlength="1500"></textarea>
-            </label>
-            <div class="footer-btn-wrap">
-                <button class="button button-icon icon ion-android-send footer-btn" type="submit" ng-disabled="!input.message || input.message === ''">
-                </button>
-            </div>
-        </ion-footer-bar>
-    </form>
+    <ion-footer-bar id="footer_bar" class="bar-stable" ng-click="notImplemented()">
+        <label class="item-input-wrapper" ng-click="notImplemented()">
+            <input type="text" placeholder="Nachricht" ng-disabled="true" ng-click="notImplemented()">
+        </label>
+        <div class="footer-btn-wrap">
+            <button class="button button-icon icon ion-ios-paperplane footer-btn">
+            </button>
+        </div>
+    </ion-footer-bar>
 </ion-view>

@@ -62,82 +62,82 @@ angular.module('ToniApp.controllers', [])
     })
 
 .controller('AccountCtrl', function($scope, $location, AccountPortfolios, Person) {
-    $scope.currentTab = 'preview';
-    var currentID = 7;
-    $scope.view_expanded = false;
-    $scope.portfolios = AccountPortfolios.getAll();
-    $scope.currentPerson = Person.get(currentID);
-    $scope.copyOfPerson = angular.copy($scope.currentPerson);
-    $scope.newEntry = {
-        url: ''
-    };
-    $scope.resetFields = function() {
+        $scope.currentTab = 'preview';
+        var currentID = 7;
+        $scope.view_expanded = false;
+        $scope.portfolios = AccountPortfolios.getAll();
+        $scope.currentPerson = Person.get(currentID);
+        $scope.copyOfPerson = angular.copy($scope.currentPerson);
         $scope.newEntry = {
             url: ''
         };
-    };
+        $scope.resetFields = function() {
+            $scope.newEntry = {
+                url: ''
+            };
+        };
 
 
-    $scope.expandCard = function() {
-        $scope.view_expanded = !$scope.view_expanded;
-    };
+        $scope.expandCard = function() {
+            $scope.view_expanded = !$scope.view_expanded;
+        };
 
-    $scope.setCurrentTab = function(tabName) {
-        $scope.currentTab = tabName;
-    };
-    $scope.displayFilter = function(show) {
-        if (show) {
-            $scope.showFilters = true;
-        } else if (!show) {
-            $scope.showFilters = false;
-        }
-    };
-    $scope.handleTopButton = function() {
-        $location.path('/tab/account/new');
-    };
+        $scope.setCurrentTab = function(tabName) {
+            $scope.currentTab = tabName;
+        };
+        $scope.displayFilter = function(show) {
+            if (show) {
+                $scope.showFilters = true;
+            } else if (!show) {
+                $scope.showFilters = false;
+            }
+        };
+        $scope.handleTopButton = function() {
+            $location.path('/tab/account/new');
+        };
 
-    $scope.getFirstName = function(fullName) {
-        return fullName.split(' ')[0];
-    };
-    $scope.markCurrentTab = function(tabName) {
-        if ($scope.currentTab === tabName) {
-            return true;
-        } else {
-            return false;
-        }
-    };
-})
-.controller('AccountPortfolioCtrl', function($scope, $location, $stateParams, $sce, AccountPortfolios, Person) {
-    var currentID = $stateParams.portfolioId;
-    $scope.portfolios = AccountPortfolios.getAll();
-    $scope.currentPortfolio = AccountPortfolios.get(currentID);
-    $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
-    $scope.favorited = $scope.currentPortfolio.favorited;
+        $scope.getFirstName = function(fullName) {
+            return fullName.split(' ')[0];
+        };
+        $scope.markCurrentTab = function(tabName) {
+            if ($scope.currentTab === tabName) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+    })
+    .controller('AccountPortfolioCtrl', function($scope, $location, $stateParams, $sce, AccountPortfolios, Person) {
+        var currentID = $stateParams.portfolioId;
+        $scope.portfolios = AccountPortfolios.getAll();
+        $scope.currentPortfolio = AccountPortfolios.get(currentID);
+        $scope.currentPerson = Person.get($scope.currentPortfolio.creator_id);
+        $scope.favorited = $scope.currentPortfolio.favorited;
 
-    $scope.toggleFavorite = function() {
-        $scope.favorited = !$scope.favorited;
-    };
+        $scope.toggleFavorite = function() {
+            $scope.favorited = !$scope.favorited;
+        };
 
-    $scope.prepareUrlForIframe = function(url) {
-        return $sce.trustAsResourceUrl(url);
-    };
+        $scope.prepareUrlForIframe = function(url) {
+            return $sce.trustAsResourceUrl(url);
+        };
 
-})
-.controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
-    var currentID = $stateParams.portfolioId;
-    $scope.portfolios = Portfolios.getAll();
-    $scope.currentPerson = Person.get(currentID);
-    $scope.view_expanded = false;
+    })
+    .controller('PortfolioDetailCtrl', function($scope, $location, $stateParams, Portfolios, Person) {
+        var currentID = $stateParams.portfolioId;
+        $scope.portfolios = Portfolios.getAll();
+        $scope.currentPerson = Person.get(currentID);
+        $scope.view_expanded = false;
 
-    $scope.expandCard = function() {
-        $scope.view_expanded = !$scope.view_expanded;
-    };
+        $scope.expandCard = function() {
+            $scope.view_expanded = !$scope.view_expanded;
+        };
 
-    $scope.getFirstName = function(fullName) {
-        return fullName.split(' ')[0];
-    };
+        $scope.getFirstName = function(fullName) {
+            return fullName.split(' ')[0];
+        };
 
-})
+    })
 
 .controller('PortfolioProjectDetailCtrl', function($scope, $location, $stateParams, $sce, Portfolios, Person) {
     var currentID = $stateParams.portfolioId;
@@ -276,8 +276,13 @@ angular.module('ToniApp.controllers', [])
 })
 
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, $anchorScroll, $location, Person, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, $anchorScroll, $location, $timeout, $ionicScrollDelegate, Person, Chats) {
     $scope.currentPerson = Person.get(7);
     $scope.chat = Chats.get($stateParams.chatId);
     $scope.friend = Person.get($scope.chat.chatFrom);
+
+    var scrollToBot = function() {
+        $ionicScrollDelegate.scrollBottom(true);
+    };
+    $timeout(scrollToBot, 0);
 });
