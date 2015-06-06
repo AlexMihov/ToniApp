@@ -16,7 +16,7 @@ angular.module('ToniApp', ['ionic', 'ToniApp.controllers', 'ToniApp.services'])
         }
         if (window.StatusBar) {
             // org.apache.cordova.statusbar required
-            StatusBar.styleLightContent();
+            //StatusBar.styleLightContent();
         }
         $rootScope.notImplemented = function(text) {
             if (text) {
